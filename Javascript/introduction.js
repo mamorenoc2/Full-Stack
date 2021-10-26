@@ -20,7 +20,7 @@ const consII = 10;
 const consIII = true;
 
 console.log(typeof consI) //String
-console.log(typeof consII) //Int
+console.log(typeof consII) //number
 console.log(typeof consIII) //Boolean
 
 /** CREATE A VARIABLE 
