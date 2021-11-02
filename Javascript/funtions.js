@@ -43,13 +43,13 @@ const rectangleArea = (width, height) => {
  * 
  * EXAMPLE:
  * Zero Parameters
- * const funtionName1 = () => {};
+ * const funtionName1 = () => {funtion};
  * 
  * One parameter
- * const funtionName2 = parameterOne => {};
+ * const funtionName2 = parameterOne => {funtion};
  * 
  * Two parameters
- * const funtionName3 = (parameterOne, parameterTwo) => {};
+ * const funtionName3 = (parameterOne, parameterTwo) => {funtion};
  * 
  * 2. A function body composed of a single-line block does not need curly braces. Without the 
  * curly braces, whatever that line evaluates will be automatically returned. The contents of
