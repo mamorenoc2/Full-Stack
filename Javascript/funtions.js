@@ -3,12 +3,11 @@
  * of the function, Since hoisting isn’t considered good practice, 
  * we simply want you to be aware of this feature.
  */
-
-greetWorld(); // Output: Hello, World!
  
 function greetWorld() {
   console.log('Hello, World!');
 }
+greetWorld(); // Output: Hello, World!
 /**
  * Another way to define a function is to use a function expression.
  */
@@ -33,6 +32,16 @@ console.log(plantNeedsWater('Tuesday'));
 const rectangleArea = (width, height) => {
   return width * height;
 };
+
+/**
+Default values
+*/
+function makeShoppingList(item1='milk', item2='bread', item3='eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
 
 /**
  * Concise Body Arrow Functions
