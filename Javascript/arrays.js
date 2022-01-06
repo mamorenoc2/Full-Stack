@@ -92,8 +92,18 @@ utensils[3] = 'Spoon'; //Chage
 
 
 /**
- * lenght
- * One of an array’s built-in properties is length and it returns the number of items
- *  in the array. We access the .length property just like we do with strings
- * 
+ * ARRAY BASIC FUNCTIONS
  */
+
+ let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+ secretMessage.pop(); //Elimina el último elemento de la lista
+ secretMessage.push('to', 'Program'); //Agrega elementos al final de la lista
+ let index = secretMessage.indexOf('easily'); // encuentra el índice de una palabra de la lista
+ secretMessage[index] = 'right'; // remplazar una palabra de la lista
+ secretMessage.shift(); // Remueve el primer elemento de la lista
+ secretMessage.unshift('Programming'); // Agrega un elemento al principio de la lista
+ index = secretMessage.indexOf('get'); 
+ secretMessage.splice(index, 5,'know'); // Elimina elementos con un indice y cantidad determinada
+ //.splice(a,b,'c') a = indice donde se empieza la lista de elementos a eliminar, b = numero de elemento de la lista, c= palabra a reemplazar
+ console.log(secretMessage.join(' '));
