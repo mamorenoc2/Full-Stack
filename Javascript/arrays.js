@@ -12,6 +12,7 @@ const listItem = famousSayings[0];
 //Print the fisrts element of the array
 //console.log(listItem);
 
+
 /** UPDATE ELEMENTS ---------------------------------------
  * 
  *  Once you have access to an element in an array, you can update its value.
