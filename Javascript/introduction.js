@@ -52,12 +52,30 @@ console.log(meal); // Output: Burrito
 */
 /** STRINGS INTERPOLATION
  *  
- * 
- * 
  */
 const myPet = 'armadillo';
 console.log(`I own a pet ${myPet}.`);
-
 const miNombre = 'Manuela';
 console.log(`Mi nombre es ${miNombre}.`);
 // Output: I own a pet armadillo.
+
+/**
+ * The for ... of Loop
+ * One of the primary uses of the for...of loop is iterating through the items of an array. 
+ * The for...of can also be used to iterate over strings.
+ */
+
+// Normal for loop
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+ 
+for (let i = 0; i < hobbies.length; i++) {
+  console.log(`I enjoy ${hobbies[i]}.`);
+}
+
+// for ... of Loop
+
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+ 
+for (const hobby of hobbies) {
+  console.log(`I enjoy ${hobby}.`);
+}
