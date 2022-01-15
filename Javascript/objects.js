@@ -9,6 +9,10 @@
     color: 'silver'
   };
 
+  let universidad = {
+    sede : 'Medellín',
+    'Nombre' : 'EAFIT'
+  };
 /**
  * Accessing Properties
  * With property dot notation, we write the object’s name, followed by the dot operator
@@ -18,6 +22,9 @@
  */
 console.log(spaceship2["Fuel Type"])
 console.log(spaceship2.color)
+console.log(universidad['Nombre']);
+console.log(universidad.Nombre)
+console.log(universidad.sede);
 
 /**
  * Property Assignment
@@ -36,6 +43,12 @@ console.log(spaceship2.color)
  //You can delete a property from an object with the delete operator.
  delete spaceship.mission;
 
+ let ejemplo = ' a ver si funciona';
+ universidad.lugar = 'Las vegas';
+ universidad.ejemplo = ejemplo;
+
+console.log(universidad.lugar);
+console.log(universidad.ejemplo);
  /**
   * METHODS
   *    When the data stored on an object is a function we call that a method. A property 
@@ -50,6 +63,17 @@ console.log(spaceship2.color)
     console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
   }
 };
+
+universidad = {
+  bienvenida (){
+    console.log('Bienvenid@ a la universidad EAFIT')
+  },
+  despedida () {
+    console.log('Hasta luego, esperamos verte de nuevo')
+  }
+}
+universidad.bienvenida();
+universidad.despedida();
 
 // With the new method syntax introduced in ES6 we can omit the colon and the function keyword.
 const alienShip2 = {
@@ -99,7 +123,54 @@ alienShip2.invade3();
  }
 }; 
 
+universidad = {
+  personal: {
+    profesores: {
+      nombre: ['carolina', 'gimena', 'carlos antonio'],
+      edad: [34, 33, 38]
+    },
+    estudiantes: {
+      nombre: ['valeria', 'milan', 'camilo'],
+      edad: 0
+    }
+  },
+  carreras: {
+    ingenierias: {
+      nombre: ['Iingenieria es sistemas', 'Ingeniería química', 'Ingeniería civil']
+    },
+    administracion: {
+      nombre: 'administracion de empresas' 
+    },
+  }
+}
+
+let nombre = 'roberto';
+universidad.personal.profesores.nombre.push(nombre);
+
+
+universidad.carreras.ingenierias.nombre[0] = 'Ingeniería en sistemas';
+universidad.carreras.ingenierias.nombre[1] = 'Ingeniería física';
+
+console.log(universidad.personal.profesores.nombre);
+console.log(universidad.carreras.ingenierias.nombre[0]);
+console.log(universidad.carreras.ingenierias.nombre[1]);
+
 // We can chain operators to access nested properties.
 spaceship3.nanoelectronics['back-up'].battery; 
+
+/**
+ * PASS BY REFERENCE
+ * Objects are passed by reference. This means when we pass a variable assigned to an object into a 
+ * function as an argument, the computer interprets the parameter name as pointing to the space in memory
+ * holding that object
+ */
+
+let coloresRepresentativos = obj => {
+  obj.color = 'Azul Marino';
+};
+
+coloresRepresentativos(universidad);
+
+console.log(universidad.color);
 
 
