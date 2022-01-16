@@ -173,4 +173,60 @@ coloresRepresentativos(universidad);
 
 console.log(universidad.color);
 
+/**
+ * LOOPING THROUGH OBJECTS
+ * 
+ * Loops are programming tools that repeat a block of code until a condition is met.
+ *  We learned how to iterate through arrays using their numerical indexing, but the key-value pairs in
+ *  objects aren’t ordered! JavaScript has given us alternative solution for iterating through objects 
+ * with the for...in syntax .
+ */
 
+ let spaceship4 = {
+  crew: {
+    captain: { 
+      name: 'Lily', 
+      degree: 'Computer Engineering', 
+      cheerTeam() { console.log('You got this!') } 
+    },
+    'chief officer': { 
+      name: 'Dan', 
+      degree: 'Aerospace Engineering', 
+      agree() { console.log('I agree, captain!') } 
+    },
+    medic: { 
+      name: 'Clementine', 
+      degree: 'Physics', 
+      announce() { console.log(`Jets on!`) } },
+    translator: {
+      name: 'Shauna', 
+      degree: 'Conservation Science', 
+      powerFuel() { console.log('The tank is full!') } 
+    }
+  }
+}; 
+ 
+// for...in
+for (let crewMember in spaceship4.crew) {
+  console.log(`${crewMember}: ${spaceship4.crew[crewMember].name}`);
+}
+
+/**
+ * THIS KEYWORD
+ * 
+ * The this keyword references the calling object which provides access to the calling object’s properties
+ * 
+ */
+
+let colegio = {
+  nombreColegio : 'mateo',
+  bienvenidaAlColegio () {
+    console.log(`bienvenido al colegio: ${nombreColegio}`);
+  },
+  despedidaAlColegio () {
+    console.log(`despedida al colegio: ${this.nombreColegio}`);
+  }
+}
+
+//colegio.bienvenidaAlColegio()  // Sale error debido a que se utiliza una variable interna en el objeto
+colegio.despedidaAlColegio() // Imprime 'despedida al colegio: mateo'
