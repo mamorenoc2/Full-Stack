@@ -230,3 +230,25 @@ let colegio = {
 
 //colegio.bienvenidaAlColegio()  // Sale error debido a que se utiliza una variable interna en el objeto
 colegio.despedidaAlColegio() // Imprime 'despedida al colegio: mateo'
+
+
+/**
+ * GETTERS
+ *   
+ * Getters are methods that get and return the internal properties of an object
+ */
+
+const estudiante = {
+  _nombre : 'carlos antonio',
+  _apellido : 'velazques',
+
+  get nombreCompleto (){
+    if (this._nombre && this._apellido){
+      return `${this._nombre} ${this._apellido}`;
+    }
+    else{
+      return `No se encuentra ningun pinche nombre`;
+    }
+  }
+}
+console.log(estudiante.nombreCompleto);
