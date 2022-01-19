@@ -169,8 +169,13 @@ let coloresRepresentativos = obj => {
   obj.color = 'Azul Marino';
 };
 
-coloresRepresentativos(universidad);
+let bloquesUniversitarios = function(obj) {
+  obj.bloque = 'bloque 19';
+};
 
+coloresRepresentativos(universidad);
+bloquesUniversitarios(universidad);
+console.log(universidad.bloque);
 console.log(universidad.color);
 
 /**
@@ -236,6 +241,12 @@ colegio.despedidaAlColegio() // Imprime 'despedida al colegio: mateo'
  * GETTERS
  *   
  * Getters are methods that get and return the internal properties of an object
+ * 
+ * Beneficts
+ *  Getters can perform an action on the data when getting a property.
+ *  Getters can return different values using conditionals.
+ *  In a getter, we can access the properties of the calling object using this
+ *  The functionality of our code is easier for other developers to understand.
  */
 
 const estudiante = {
@@ -252,3 +263,117 @@ const estudiante = {
   }
 }
 console.log(estudiante.nombreCompleto);
+
+let tarjetaDeCredito = {
+  _numeroDeTarjetaDeCredito : 12345678,
+  get numeroDeTarjetaDeCredito () {
+    if (typeof this._numeroDeTarjetaDeCredito === "number") {
+      return `${this._numeroDeTarjetaDeCredito}`;
+    } else{
+      return 'eso no es un número brut@ de mierda';
+    }
+  }
+};
+console.log(tarjetaDeCredito.numeroDeTarjetaDeCredito);
+
+/**
+ * SETTERS
+ * 
+ * Along with getter methods, we can also create setter methods which reassign values
+ *  of existing properties within an object
+ * 
+ */
+
+let lapicesDeColores = {
+  _colorFavorito : 'amarillo',
+  get colorFavorito () {
+    if (this._colorFavorito){
+      return `${this._colorFavorito}`;
+    }
+    else {
+      return 'No hay color favorito';
+    }
+  },
+  set colorFavorito (color) {
+    if(typeof color === "string"){
+      this._colorFavorito = color;
+    }
+    else {
+      console.log('el color tiene que ser un string');
+    }
+  }
+};
+
+console.log(lapicesDeColores.colorFavorito)
+lapicesDeColores.colorFavorito = 'azul';
+console.log(lapicesDeColores.colorFavorito)
+
+/**
+ * FACTORY FUNCTIONS
+ * 
+ * So far we’ve been creating objects individually, but there are times where we want to create
+ * many instances of an object quickly. Here’s where factory functions come in.
+ * 
+ * A real world factory manufactures multiple copies of an item quickly and on a massive scale. 
+ * A factory function is a function that returns an object and can be reused to make multiple object
+ * instances.
+ */
+
+let profesoresFactory = function(nombre, apellido, edad, materia, lugar) {
+  return {
+    nombre : nombre,
+    apellido : apellido,
+    edad : edad,
+    materia : materia,
+    lugar : lugar,
+    bienvenida : function(lugar) {
+      console.log(`Desde ${lugar}, bienvenid@`);
+    }
+  }
+};
+
+const p1 = profesoresFactory('carlos antonio','pelaez',34,'quimica','barranquilla');
+const p2 = profesoresFactory('Miguel Angel','Correa', 23, 'politica', 'barrancabermeja');
+
+let objetosProfesores = [];
+objetosProfesores.push(p1,p2)
+let i = 0;
+while(i<objetosProfesores.length){
+  console.log(`${objetosProfesores[i].bienvenida(objetosProfesores[i].lugar)} profesor ${objetosProfesores[i].nombre}`);
+  i++;
+}
+
+// ES6 introduced some new shortcuts for assigning properties to variables known as destructuring.
+
+const profesoresFactory2 = (nombre, apellido, edad, materia, lugar) => {
+  return {
+    nombre : nombre,
+    apellido : apellido,
+    edad : edad,
+    materia : materia,
+    lugar : lugar
+  }
+}
+
+/**
+ * DESTRUCTURED ASSIGNMENT
+ * In destructured assignment we create a variable with the name of an object’s key that
+ * is wrapped in curly braces { } and assign to it the object.
+ */
+
+let ropaFavorita = (color, forma, estilo) => {
+  return{
+    color,
+    forma,
+    estilo,
+  }
+};
+
+ropaFavorita.color = 'amarillo';
+ropaFavorita.forma = 'vestido';
+ropaFavorita.estilo = 'ligero';
+
+const {color} = ropaFavorita;
+
+console.log(color)
+
