@@ -71,6 +71,10 @@ if (isNightTime) {
 
 isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
 
+let numeroDeComidas = 0;
+
+numeroDeComidas ? console.log('No es un bobo hp') : console.log('Es un bobo hp')
+
 /** SWICTH CASE
  * 
 */

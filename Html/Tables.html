@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    
+    <h3>Tabla ejemplo 1:</h3>
+    <table border="1">
+        <tr> <!-- table rows -->
+            <th>Fila 1:</th> <!-- table header -->
+            <td>Columna 1.1</td> <!-- table data -->
+            <td>Columna 1.2</td>  
+        </tr>
+        <tr>
+            <th>Fila 2:</th>
+            <td>Columna 2.1</td>
+            <td>Columna 2.2</td>
+        </tr>
+    </table>
+
+    
+    <h3>Tabla ejemplo 2:</h3>
+    <table border="1">
+        <tr>
+            <td colspan="1"></td>
+            <td colspan="3">Caracteristicas</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Personalidades</td>
+        </tr>
+        <tr>
+            <th>Mc</th>
+            <td>Calmada</td>
+            <td>Inteligente</td>
+        </tr>
+        <tr>
+            <th>Emma</th>
+            <td>Carismática</td>
+            <td>Animada</td>
+        </tr>
+        <tr>
+            <th>Nela</th>
+            <td>Coqueta</td>
+            <td>Lider</td>
+        </tr>
+    </table>
+
+    <h3>Tabla ejemplo 3</h3>
+    <table border="1">
+        <thead> <!--Table head-->
+          <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+          </tr>
+        </thead>
+        <tbody>  <!--Table body-->
+          <tr>
+            <th scope="row">Morning</th>
+            <td rowspan="2">Work</td>
+            <td rowspan="3">Relax</td>
+          </tr>
+          <tr>
+           <th scope="row">Afternoon</th>
+          </tr>
+          <tr>
+            <th scope="row">Evening</th>
+            <td>Dinner</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3"> d</th>
+            </tr>
+        </tfoot>
+      </table>
+</body>
+</html>

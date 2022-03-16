@@ -51,8 +51,11 @@ console.log(meal); // Output: Burrito
 
 */
 /** STRINGS INTERPOLATION
- *  
+ *  with the keys (alt + }*2) we can type ``
  */
+const hello = ' hi';
+console.log(`hello or ${hello}`)
+
 const myPet = 'armadillo';
 console.log(`I own a pet ${myPet}.`);
 const miNombre = 'Manuela';
@@ -74,7 +77,7 @@ for (let i = 0; i < hobbies.length; i++) {
 
 // for ... of Loop
 
-const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+const hobbies2 = ['singing', 'eating', 'quidditch', 'writing'];
  
 for (const hobby of hobbies) {
   console.log(`I enjoy ${hobby}.`);

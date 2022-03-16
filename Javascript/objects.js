@@ -39,7 +39,10 @@ console.log(universidad.sede);
  spaceship.type = 'alien'; // Changes the value of the type property
  spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
  spaceship.mission = 'Explore the universe';
+ spaceship['Probando algo'] = 'si funciona';
 
+
+ console.log( spaceship['Probando algo'])
  //You can delete a property from an object with the delete operator.
  delete spaceship.mission;
 
