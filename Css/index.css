@@ -1,0 +1,84 @@
+* {
+  border: 1px solid red;
+  font-style: normal;
+}
+
+header {
+    background-color:aquamarine;
+}
+
+header nav {
+    background-color: bisque;
+}
+
+main {
+    background-color: azure;
+}
+footer{
+    background-color: aqua;
+}
+
+h1 {
+    color:blueviolet;
+    text-align: center;
+    font-weight: bolder;
+}
+figure{
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 550px;
+    
+}
+
+figure img{
+    width: 500px;
+}
+
+/*        -------------       Clases en CSS        ------------------  */
+.green {
+    color:green;
+}
+
+.purple {
+    color: purple;
+}
+
+
+
+/* ------------------         ID en CSS             ------------------ */
+#primavera h2{
+    color: green;
+}
+
+#verano h2 {
+    color: orange;
+}
+
+#otono h2{
+    color: brown
+}
+
+#invierno h2{
+    color: blue;
+}
+
+
+/* --------------          Atributos en css           ------------------ */
+
+a[href*='Primavera']{
+    color:green;
+}
+a[href*='Verano']{
+    color:orange;
+}
+a[href*='20invierno']{
+    color:brown;
+}
+
+a[href*='Invierno']{
+    color:blue;
+}
+
+a:hover{
+    color:coral;
+}
