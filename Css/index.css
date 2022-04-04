@@ -1,6 +1,16 @@
 * {
-  border: 1px solid red;
   font-style: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Fonts */
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h3, h4, h5, p {
+    text-align: justify;
 }
 
 header {
@@ -19,7 +29,7 @@ footer{
 }
 
 h1 {
-    color:blueviolet;
+    color:black;
     text-align: center;
     font-weight: bolder;
 }
@@ -35,32 +45,41 @@ figure img{
 }
 
 /*        -------------       Clases en CSS        ------------------  */
-.green {
-    color:green;
+
+.back-img{
+    background-image: url(/Full-Stack/Css/images/estaciones-climaticas.jpg);
+    background-size: cover;
+    height: 300px;
 }
-
-.purple {
-    color: purple;
-}
-
-
-
-/* ------------------         ID en CSS             ------------------ */
-#primavera h2{
+.primavera h2{
     color: green;
 }
 
-#verano h2 {
+.verano h2 {
     color: orange;
 }
 
-#otono h2{
+.otono h2{
     color: brown
 }
 
-#invierno h2{
+.invierno h2{
     color: blue;
 }
+
+
+/* ------------------         ID en CSS             ------------------ */
+#p-primavera
+#p-verano{
+
+}
+#p-otono{
+
+}
+#p-invierno{
+
+}
+
 
 
 /* --------------          Atributos en css           ------------------ */
@@ -81,4 +100,11 @@ a[href*='Invierno']{
 
 a:hover{
     color:coral;
+}
+
+/*----------- /*----------- Multiple Selectors /*-----------/*----------- */
+
+p,
+.mas-info {
+    font-family: 'Courier New', Courier, monospace;
 }
