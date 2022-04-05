@@ -49,7 +49,9 @@ figure img{
 .back-img{
     background-image: url(/Full-Stack/Css/images/estaciones-climaticas.jpg);
     background-size: cover;
+    background-position: bottom center;
     height: 300px;
+    border-radius: 30%;
 }
 .primavera h2{
     color: green;
@@ -67,9 +69,16 @@ figure img{
     color: blue;
 }
 
+.title {
+    border: 3px solid whitesmoke;
+}
+
 
 /* ------------------         ID en CSS             ------------------ */
-#p-primavera
+#p-primavera{
+
+}
+
 #p-verano{
 
 }
@@ -107,4 +116,20 @@ a:hover{
 p,
 .mas-info {
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*---------/*--------------* Borders --/*----------/*----------------*/ 
+
+.primavera{
+    border: 2px dotted green;
+}
+.verano{
+    border: 2px dotted orange;
+}
+.otono{
+    border: 2px dotted brown;
+}
+.invierno{
+    border: 2px dotted blue;
 }
