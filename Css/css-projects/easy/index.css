@@ -13,6 +13,9 @@ h3, h4, h5, p {
     text-align: justify;
 }
 
+
+/* Parts*/
+
 header {
     background-color:aquamarine;
 }
@@ -29,7 +32,7 @@ footer{
 }
 
 h1 {
-    color:black;
+    color:whitesmoke ;
     text-align: center;
     font-weight: bolder;
 }
@@ -47,7 +50,7 @@ figure img{
 /*        -------------       Clases en CSS        ------------------  */
 
 .back-img{
-    background-image: url(/Full-Stack/Css/images/estaciones-climaticas.jpg);
+    background-image: url(/Full-Stack/Css/css-projects/easy/images/estaciones-climaticas.jpg);
     background-size: cover;
     background-position: bottom center;
     height: 300px;

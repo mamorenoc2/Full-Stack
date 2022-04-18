@@ -1,0 +1,77 @@
+*{
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+}
+body{
+    background-color: rgb(14, 14, 74);
+}
+
+header{
+    
+    background-color: #4ecdf4;
+}
+header nav {
+    overflow: hidden;
+    background-color: sandybrown;
+    
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: whitesmoke;
+    color: rgb(14, 14, 74);
+}
+
+main {
+    background-color:steelblue;
+}
+footer{
+    background-color: darkslateblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+figure img{
+    width: 1000px;
+}
+li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
