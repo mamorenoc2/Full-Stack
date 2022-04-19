@@ -14,11 +14,12 @@
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <a href="#box-model" class="dropbtn">The Box Model</a>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                      <a href="#width-and-height"> Width and Height</a>
+                      <a href="#padding">Padding</a>
+                      <a href="#border">Border</a>
+                      <a href="#margin">Margin</a>
                     </div>
                 </li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,14 +30,13 @@
         <section id="introduction">
             <h2> Introduction to the box model</h2>
             <p> Browsers load HTML elements with default position values. This often leads to an unexpected and unwanted user experience while limiting the views you can create. In this lesson, you will learn about the box model, an important concept to understand how elements are positioned and displayed on a website.</p>
-            <br>
             <p>All elements on a web page are interpreted by the browser as “living” inside of a box. This is what is meant by the box model.</p>
             <p>In this lesson, you’ll learn about the following aspects of the box model:</p>
             <ol>
-                <li>The dimensions of an element’s box.</li>
-                <li> The borders of an element’s box.</li> 
-                <li>The paddings of an element’s box.</li> 
-                <li>The margins of an element’s box.</li>
+                <li> <p>The dimensions of an element’s box.</p> </li>
+                <li> <p>The borders of an element’s box.</p> </li> 
+                <li> <p>The paddings of an element’s box.</p> </li> 
+                <li> <p>The margins of an element’s box.</p> </li>
             </ol>
         </section>
         <section id="box-model">
@@ -53,13 +53,73 @@
                 <figcaption>Box Model Example</figcaption>
             </figure>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <aside>
+        <section id="width-and-height">
+            <h2>Width and Height</h2>
+            <p>An element’s content has two dimensions: a height and a width. By default, the dimensions of an HTML box are set to hold the raw contents of the box.</p>
 
-        </aside>
+        </section>
+        <section id="padding">
+            <article class="description">
+                <h2>Padding</h2>
+                <p>The space between the contents of a box and the borders of a box is known as padding. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the padding property.</p>
+                <p>The padding property is often used to expand the background color and make the content look less cramped.</p>
+                <p>If you want to be more specific about the amount of padding on each side of a box’s content, you can use the following properties:</p>
+                <ul>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-bottom</li>
+                    <li>padding-left</li>
+                </ul>
+            </article>
+            <article class="shorthand">
+                <h3>Shorthand padding:</h3>
+                <p>Another implementation of the padding property lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a shorthand property.</p>
+                <p>You can specify these properties in a few different ways:</p>
+                <ul>
+                    <li><p> <strong>4 Values: </strong>In order, it specifies the padding-top value, the padding-right value, the padding-bottom value , and the padding-left value of the content just like a clock.</p></li>
+                    <li><p> <strong>3 Values: </strong>If the left and right sides of the content can be equal, the padding shorthand property allows for 3 values to be specified. The first value sets the padding-top value, the second value sets the padding-left and padding-right values, and the third value sets the padding-bottom value.</p></li>
+                    <li><p> <strong>2 Values: </strong> if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the padding-top and padding-bottom values, and the second value sets the padding-left and padding-right values.</p></li>
+                </ul>
+            </article>
+            
+
+        </section>
+        <section id="border">
+            <h2>Border</h2>
+            <p>A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color:</p>
+            <ul>
+                <li><strong>Width:</strong> The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.</li>
+                <li><strong>Style:</strong> The design of the border. Web browsers can render any of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">10 different styles</a> . Some of these styles include: none, dotted, and solid.</li>
+                <li><strong>Color:</strong>The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords. </li>
+            </ul>
+            <p>All three properties are set in one line of code.</p>
+
+        </section>
+        <section id="margin">
+            <article class="description">
+                <h2>Margin</h2>
+                <p>Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space. If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:</p>
+                <ul>
+                    <li><p>margin-top</p></li>
+                    <li><p>margin-bottom</p></li>
+                    <li><p>margin-left</p></li>
+                    <li><p>margin-right</p></li>
+                </ul>
+            </article>
+            <article class="shortband">
+                <h3>Margin Shorthand</h3>
+                <p>What if you don’t want equal margins on all four sides of the box and don’t have time to separate properties for each side? You’re in luck! Margin can be written as a shorthand property as well.</p>
+                <p>Similar to padding shorthand, margin shorthand lets you specify all of the margin properties as values on a single line:</p>
+                <p>You can specify these properties in a few different ways:</p>
+                <ul>
+                    <li><p> <strong>4 Values: </strong>In order, it specifies the  margin-top value, the margin-right value, the margin-bottom value , and the margin-left value of the content just like a clock.</p></li>
+                    <li><p> <strong>3 Values: </strong>If the left and right sides of the content can be equal, the margin shorthand property allows for 3 values to be specified. The first value sets the margin-top value, the second value sets the margin-left and margin-right values, and the third value sets the margin-bottom value.</p></li>
+                    <li><p> <strong>2 Values: </strong> if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the margin-top and margin-bottom values, and the second value sets the margin-left and margin-right values.</p></li>
+                </ul>
+            </article>
+            
+            
+        </section>
     </main>
     <footer >
         <section id="contact">

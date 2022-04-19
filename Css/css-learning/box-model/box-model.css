@@ -4,11 +4,16 @@
 }
 body{
     background-color: rgb(14, 14, 74);
+    padding: 10px;
+    font-size: large;
 }
 
 header{
-    
+    height: 200px;
     background-color: #4ecdf4;
+    border: 3px solid whitesmoke;
+    border-radius: 1%;
+    margin-bottom: 15px;
 }
 header nav {
     overflow: hidden;
@@ -16,38 +21,57 @@ header nav {
     
 }
 header nav ul {
+    margin: 0 auto;
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    float: left;
+    text-align: center;
 }
 header nav ul li{
-    float: left;
-}
-header nav ul li a{
     display: inline-block;
-    text-align: center;
     padding: 14px 16px;
+    text-align: center;
     text-decoration: none;
+
 }
-header nav a:hover{
+header nav li:hover{
     background-color: whitesmoke;
-    color: rgb(14, 14, 74);
+    color: black
 }
 
 main {
     background-color:steelblue;
+    border: 3px solid whitesmoke;
+    border-radius: 1%;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: justify;
+}
+section{
+    margin-bottom: 30px;
 }
 footer{
     background-color: darkslateblue;
+    border-radius: 1%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     text-align: center;
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    border-radius: 10%;
 }
 
 figure img{
     width: 1000px;
+    margin: 0 auto;
 }
 li.dropdown {
     display: inline-block;
@@ -75,3 +99,27 @@ li.dropdown {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  #width-and-height, #border{
+      border: 3px solid whitesmoke;
+      background-color:cornflowerblue;
+      margin-bottom: 15px;
+      padding: 40px;
+      border-radius: 1%;
+      text-align: justify;
+  }
+#padding, #margin{
+    border: 3px solid whitesmoke;
+    background-color: sandybrown ;
+    margin-bottom: 15px;
+    padding: 40px;
+    border-radius: 1%;
+    text-align: justify;
+}
+
+#padding article{
+    margin-bottom: 50px;
+}
+#box-model p, #introduction p{
+    margin-bottom: 30px;
+}
