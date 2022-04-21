@@ -1,6 +1,7 @@
 *{
     color: whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(14, 14, 74);
@@ -104,8 +105,16 @@ li.dropdown {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .note b, .note{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      text-align: justify;
+      color:mediumblue;
+      font-style: italic;
+  }
 
-  #width-and-height, #border, #overflow{
+  #width-and-height, #border, #overflow-and-visibility{
       border: 3px solid whitesmoke;
       background-color:cornflowerblue;
       margin-bottom: 15px;

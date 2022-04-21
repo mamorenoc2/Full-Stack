@@ -20,7 +20,7 @@
                       <a href="#padding">Padding</a>
                       <a href="#border">Border</a>
                       <a href="#margin">Margin</a>
-                      <a href="#overflow">Overflow</a>
+                      <a href="#overflow-and-visibility">Overflow and Visibility</a>
                     </div>
                 </li>
                 <li><a href="#contact">Contact</a></li>
@@ -48,7 +48,7 @@
                 <li><p> <b><a href="#padding"> Padding: </a></b>The amount of space between the content area and the border</p></li>
                 <li><p> <b><a href="#border"> Border: </a></b> The thickness and style of the border surrounding the content area and padding</p></li>
                 <li><p><b><a href="#margin"> Margin: </a></b> The amount of space between the border and the outside edge of the element</p></li>
-                <li><p><b><a href="#overflow"></a></b>The overflow controls what happens to content that spills, or overflows, outside its box.</p></li>
+                <li><p><b><a href="#overflow-and-visibility">Overflow and visibility:</a></b> The overflow and visibility controls what happens to content that spills, or overflows, outside its box, can hide, display and collapse elements.</p></li>
             </ol>
             <figure>
                 <img src="/Full-Stack/Css/css-learning/img-learning/box_model.png" alt="No disponible">
@@ -131,9 +131,10 @@
                 </ul>
             </article>
         </section>
-        <section id="overflow">
+        <section id="overflow-and-visibility">
             <article class="description">
-                <h2>Overflow</h2>
+                <h2>Overflow and Visibility</h2>
+                <h3>Overflow:</h3>
                 <p>The overflow property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are:</p>
                 <ul>
                     <li><p><b>hiden:</b> when set to this value, any content that overflows will be hidden from view. </p></li>
@@ -141,6 +142,14 @@
                     <li><p><b>visible:</b> when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.</p></li>
 
                 </ul>
+                <h3>Visibility:</h3>
+                <p>The visibility property can be set to one of the following values:</p>
+                <ul>
+                    <li><p><b>hidden: </b>hides a element</p></li>
+                    <li><p><b>visible: </b>displays a element</p></li>
+                    <li><p><b>collapse: </b>collapses a element</p></li>
+                </ul>
+                <p class="note"><b>What’s the difference between display: none and visibility: hidden?</b>  An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.</p>
             </article>
         </section>
     </main>
