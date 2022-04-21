@@ -54,10 +54,13 @@ footer{
     border-radius: 1%;
 }
 
+h1{
+    font-size: 60px;
+}
 h1, h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: xx-large;
+    font-size: 40px;
 }
 a{
     text-decoration: none;
@@ -68,10 +71,12 @@ a:hover{
     text-decoration: none;
     border-radius: 10%;
 }
-
+b, strong {
+    font-size: 20px;
+}
 figure img{
-    width: 1000px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
 }
 li.dropdown {
     display: inline-block;
@@ -100,7 +105,7 @@ li.dropdown {
     display: block;
   }
 
-  #width-and-height, #border{
+  #width-and-height, #border, #overflow{
       border: 3px solid whitesmoke;
       background-color:cornflowerblue;
       margin-bottom: 15px;

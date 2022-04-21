@@ -20,6 +20,7 @@
                       <a href="#padding">Padding</a>
                       <a href="#border">Border</a>
                       <a href="#margin">Margin</a>
+                      <a href="#overflow">Overflow</a>
                     </div>
                 </li>
                 <li><a href="#contact">Contact</a></li>
@@ -47,6 +48,7 @@
                 <li><p> <b><a href="#padding"> Padding: </a></b>The amount of space between the content area and the border</p></li>
                 <li><p> <b><a href="#border"> Border: </a></b> The thickness and style of the border surrounding the content area and padding</p></li>
                 <li><p><b><a href="#margin"> Margin: </a></b> The amount of space between the border and the outside edge of the element</p></li>
+                <li><p><b><a href="#overflow"></a></b>The overflow controls what happens to content that spills, or overflows, outside its box.</p></li>
             </ol>
             <figure>
                 <img src="/Full-Stack/Css/css-learning/img-learning/box_model.png" alt="No disponible">
@@ -54,9 +56,20 @@
             </figure>
         </section>
         <section id="width-and-height">
-            <h2>Width and Height</h2>
-            <p>An element’s content has two dimensions: a height and a width. By default, the dimensions of an HTML box are set to hold the raw contents of the box.</p>
-
+            <article class="description">
+                <h2>Width and Height</h2>
+                <p>An element’s content has two dimensions: a height and a width. By default, the dimensions of an HTML box are set to hold the raw contents of the box.</p>
+            </article>
+            <article class="features">
+                <h3>Minimum and Maximum Height and Width</h3>
+                <p>Because a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size. To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element’s box can be sized to:</p>
+                <ul>
+                    <li><p><strong>min-width: </strong>this property ensures a minimum width of an element’s box.</p></li>
+                    <li><p><strong>max-width: </strong>this property ensures a maximum width of an element’s box.</p></li>
+                    <li><p><strong>min-hegth: </strong>this property ensures a minimum hegth of an element’s box.</p></li>
+                    <li><p><strong>max-hegth: </strong>this property ensures a maximum hegth of an element’s box.</p></li>
+                </ul>
+            </article>
         </section>
         <section id="padding">
             <article class="description">
@@ -71,7 +84,7 @@
                     <li>padding-left</li>
                 </ul>
             </article>
-            <article class="shorthand">
+            <article class="features">
                 <h3>Shorthand padding:</h3>
                 <p>Another implementation of the padding property lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a shorthand property.</p>
                 <p>You can specify these properties in a few different ways:</p>
@@ -90,7 +103,7 @@
             <ul>
                 <li><strong>Width:</strong> The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: thin, medium, or thick.</li>
                 <li><strong>Style:</strong> The design of the border. Web browsers can render any of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values" target="_blank">10 different styles</a> . Some of these styles include: none, dotted, and solid.</li>
-                <li><strong>Color:</strong>The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords. </li>
+                <li><strong>Color: </strong>The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords. </li>
             </ul>
             <p>All three properties are set in one line of code.</p>
 
@@ -106,7 +119,7 @@
                     <li><p>margin-right</p></li>
                 </ul>
             </article>
-            <article class="shortband">
+            <article class="features">
                 <h3>Margin Shorthand</h3>
                 <p>What if you don’t want equal margins on all four sides of the box and don’t have time to separate properties for each side? You’re in luck! Margin can be written as a shorthand property as well.</p>
                 <p>Similar to padding shorthand, margin shorthand lets you specify all of the margin properties as values on a single line:</p>
@@ -117,8 +130,18 @@
                     <li><p> <strong>2 Values: </strong> if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the margin-top and margin-bottom values, and the second value sets the margin-left and margin-right values.</p></li>
                 </ul>
             </article>
-            
-            
+        </section>
+        <section id="overflow">
+            <article class="description">
+                <h2>Overflow</h2>
+                <p>The overflow property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are:</p>
+                <ul>
+                    <li><p><b>hiden:</b> when set to this value, any content that overflows will be hidden from view. </p></li>
+                    <li><p><b>scroll:</b> when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.</p></li>
+                    <li><p><b>visible:</b> when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.</p></li>
+
+                </ul>
+            </article>
         </section>
     </main>
     <footer >
