@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display-position.css">
+    <title>Display And Position</title>
+</head>
+<body>
+    <header>
+        <h1>Display and Position</h1>
+        <nav>
+            <ul>
+                <li> <a href="#position"> position</a></li>
+                <li> <a href="#display">display</a> </li>
+                <li> <a href="#z-index">z-index</a> </li>
+                <li> <a href="#float">float</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="position">
+            <h2>Position</h2>
+            <article id="definition">
+                <p>Block-level elements like these boxes create a block the full width of their parent elements, and they prevent other elements from appearing in the same horizontal space.</p>
+                <p>The default position of an element can be changed by setting its position property. The position property can take one of five values:</p>
+                <ul>
+                    <li> <a href="#static">static</a></li>
+                    <li> <a href="#relative">relative</a></li>
+                    <li> <a href="#absolute">absolute</a></li>
+                    <li> <a href="#fixed">fixed</a></li>
+                    <li> <a href="#sticky">sticky</a></li>
+                </ul>
+            </article>
+            <article id="relative">
+                <h3>Relative</h3>
+                <p>One way to modify the default position of an element is by setting its position property to relative.</p>
+                <p>This value allows you to position an element relative to its default static position on the web page</p>
+                <p>The browser expect a relative positioning of the box element, it does not specify where the box element should be positioned on the page. This is done by accompanying the position declaration with one or more of the following offset properties that will move the element away from its default static position:</p>
+                <ul>
+                    <li><p> <strong>top -</strong> moves the element down from the top.</p></li>
+                    <li><p> <strong>bottom -</strong> moves the element up from the bottom.</p></li>
+                    <li><p><strong>left -</strong> moves the element away from the left side (to the right).</p></li>
+                    <li><p><strong>right -</strong> moves the element away from the right side (to the left).</p></li>
+                </ul>
+                <p>You can specify values in pixels, ems, or percentages, among others, to dial in exactly how far you need the element to move. It’s also important to note that offset properties will not work if the element’s position property is the default static.</p>
+            </article>
+            <article id="absolute">
+                <h3>absolute</h3>
+                <p>Another way of modifying the position of an element is by setting its position to absolute.</p>
+                <p>When an element’s position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page.</p>
+                <p>The element will be positioned relative to its closest positioned parent element, while offset properties can be used to determine the final position from there.</p>
+            </article>
+            <article id="fixed">
+                <h3>fixed</h3>
+                <p>We can fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and right.</p>
+            </article>
+            <article id="sticky">
+
+            </article>
+        </section>
+
+        <section>
+            <article>
+                
+            </article>
+        </section>
+
+        <section>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
