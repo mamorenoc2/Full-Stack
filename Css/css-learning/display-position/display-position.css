@@ -15,6 +15,7 @@ header{
     padding: 20px 0px;
     text-align: center;
     border: 3px solid white;
+    margin-bottom: 20px;
 }
 nav{
     height: 50px;
@@ -23,25 +24,31 @@ nav{
 }
 
 nav ul li{
-    height: 50px;
-    padding: 10px;
-    width: 90px;
     display: inline-block;
     color: cornflowerblue;
+    
 }
 nav ul li a{
+    display: block;
+    height: 50px;
+    padding-top: 10px;
+    width: 80px;
     text-decoration: none;
-    
+    color: cornflowerblue;
+    text-transform: capitalize;
 }
-nav ul li:hover{
+
+nav ul li a:hover{
+    width: 100px;
     background-color: cornflowerblue;
-    
-}
-nav ul li a{
-    color: whitesmoke;
+    color:  white;
+    font-size: 22px;
 }
 
 main{
+    background-color:cornflowerblue ;
+    padding: 20px;
+    border: 3px solid whitesmoke;
 
 }
 footer{
