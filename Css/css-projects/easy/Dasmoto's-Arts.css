@@ -55,18 +55,40 @@ footer{
 
 .jumbotron{
     height: 300px;
-    background-image: url(/Full-Stack/Css/css-projects/easy/images/pattern.jpg);
+    background-image: url(images/pattern.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+.materials{
+    padding: 10px;
+    display: relative;
+    background-color: khaki;
+}
 .container {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    text-align: center;
+    text-align: center; 
 }
+
+.materials .col {
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 3 solid white;
+}
+
+.materials .col figure{
+    display: inline-block;
+}
+.materials .col figure{
+    display: inline-block;
+}
+
 
 .col h2{
     font-size: 32px;
