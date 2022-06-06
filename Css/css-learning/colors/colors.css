@@ -1,6 +1,6 @@
 html, body{
-    background-color: whitesmoke;
-    color: black;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,6 +55,14 @@ main h1{
     text-transform: uppercase;
 }
 
+section{
+    background-color: whitesmoke;
+}
+
+section .intro{
+    color: black
+}
+
 code{
     background-color: black;
     color: white;
@@ -62,11 +70,14 @@ code{
     border: 1px;
     border-radius: 15%;
 }
+p{
+    margin: 0 auto;
+    text-align: justify;
+}
 
 .container{
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 0 10px;
     text-align: center;
 }
 
@@ -80,5 +91,14 @@ code{
 }
 .col{
     display: block;
-    margin: 100px 0;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
 }
