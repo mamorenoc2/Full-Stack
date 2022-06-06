@@ -1,8 +1,57 @@
 html, body{
-    background-color: darkslategrey;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+}
+
+nav{
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav li{
+    display: inline-block;
+    height: 80px;
+    margin: 0 10px;
+}
+nav li a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     color: whitesmoke;
+    margin: 50px;
+    font-size: 20px;
+}
+nav li a:hover{
+    font-size: 25px;
+}
+
+main{
+    padding-top: 90px;
 }
 
 code{
     background-color: black;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.col{
+    display: block;
+    margin: 100px 0;
 }
