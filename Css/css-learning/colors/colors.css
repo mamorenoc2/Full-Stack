@@ -12,36 +12,55 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-    height: 90px;
+    
 }
 
 nav{
     margin: 0;
-    padding: 20px 0;
+    width: 100%;
+    height: 70px;
 }
 
 nav li{
     display: inline-block;
-    height: 80px;
-    margin: 0 10px;
 }
+
 nav li a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 20px 40px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color: whitesmoke;
-    margin: 50px;
-    font-size: 20px;
+    font-size: 18px;
 }
 nav li a:hover{
-    font-size: 25px;
+    font-weight: bolder;
+    width: 100px;
 }
 
 main{
-    padding-top: 90px;
+    padding-top: 60px;
+}
+
+main h1{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 150px;
+    margin-top: 0px;
+    padding-top: 30px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
 }
 
 code{
     background-color: black;
+    color: white;
+    padding: 2px;
+    border: 1px;
+    border-radius: 15%;
 }
 
 .container{
@@ -51,6 +70,14 @@ code{
     text-align: center;
 }
 
+.front-page{
+    height: 500px;
+    background-image: url(/Css/css-learning/img-learning/Colors.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .col{
     display: block;
     margin: 100px 0;
