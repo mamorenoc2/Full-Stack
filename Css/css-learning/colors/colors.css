@@ -50,17 +50,19 @@ main h1{
     font-weight: 600;
     font-size: 150px;
     margin-top: 0px;
-    padding-top: 30px;
+    padding-top: 120px;
     margin-bottom: 80px;
     text-transform: uppercase;
 }
 
 section{
-    background-color: whitesmoke;
+    background-color: gray;
+    padding-top: 15px;
 }
 
-section .intro{
-    color: black
+section h2{
+    font-size: 44px;
+    font-weight:lighter;
 }
 
 code{
@@ -73,12 +75,21 @@ code{
 p{
     margin: 0 auto;
     text-align: justify;
+    font-size: 18px;
+    padding-top: 15px;
 }
 
 .container{
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+.container-b{
+    max-width: 85%;
+    margin: 5px auto;
+    text-align: center;
+    background-color: black;
 }
 
 .front-page{
@@ -93,15 +104,24 @@ p{
     display: block;
     margin: 0 auto;
     overflow: auto;
-    padding: 10px;
+    padding: 40px;
 }
-
+.note{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 17px;
+    margin-top: 5px;
+}
 .yellow{
-    background-color: yellow;
+    background-color: rgb(228,156,3);
 }
 .green{
     background-color: green;
 }
-.blue{
+.skyblue{
     background-color: #01b9e9;
+}
+
+.blue{
+    background-color: blue;
 }

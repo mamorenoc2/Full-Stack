@@ -13,7 +13,8 @@
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#hexadecimal">Hexadecimal</a></li>
-                <li><a href="#rgb">RGB</a></li>
+                <li><a href="#RGB">RGB</a></li>
+                <li><a href="#HSL">HSL</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,7 @@
         </div>
     </main>
     <section>
-        <div class="container">
+        <div class="container-b">
             <div class="col intro">
                 <h2 id="introduction">Introduction to Color</h2>
                 <p>CSS supports a wide variety of colors. These include named colors, like blue, black, and limegreen, along with colors described by a numeric value. Using a numeric system allows us to take advantage of the whole spectrum of colors that browsers support. In this lesson, we’re going to explore all the color options CSS offers.</p>
@@ -50,16 +51,28 @@
                         <li><code>background-color</code> - this property styles an element’s background color.</li>
                     </ul>
                 </div>
-                <div class="col green">
-                    <h2 id="hexadecimal">Hexadecimal</h2>
+                <div class="col green" id="hexadecimal">
+                    <h2>Hexadecimal</h2>
                     <p>One syntax that we can use to specify colors is called hexadecimal. Colors specified using this system are called hex colors. A hex color begins with a hash character (#) which is followed by three or six characters. The characters represent values for red, blue and green.</p>
                     <p>The hexadecimal number system has 16 digits (0-15) instead of 10 (0-9) like in the standard decimal system. To represent 10-15, we use A-F. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank" >Here</a> is a list of many different colors and their hex values.</p>
                     <p>The hexadecimal colors that are represented by 3 characters is because they have number pairs are the same characters</p>
                     <p>You can include hex colors just as you would include named colors, and the letters can be uppercase or lowercase.</p>
                 </div>
-                <div class="col blue">
+                <div class="col skyblue" id="RGB">
                     <h2>RGB Colors</h2>
                     <p>There is another syntax for representing RGB values, commonly referred to as “RGB value” or just “RGB”, that uses decimal numbers rather than hexadecimal numbers.</p>
+                    <p>Each of the three values represents a color component, and each can have a decimal number value from 0 to 255. The first number represents the amount of red, the second is green, and the third is blue. These colors are exactly the same as hex, but with a different syntax and a different number system.</p>
+                    <p class="note">"In general, hex and RGB color representations are equivalent. Which you choose is a matter of personal taste. That said, it’s good to choose one and be consistent throughout your CSS, because it’s easier to compare hex to hex and RGB to RGB."</p>
+                </div>
+            </div>
+            <div class="container-b">
+                <p>In both hex and RGB, we have three values, one for each color. Each can be one of 256 values. Specifically, 256 * 256 * 256 = 16,777,216. That is the amount of colors we can now represent. Compare that to the roughly 140 named CSS colors!</p>
+            </div>
+            <div class="container" id="HSL">
+                <div class="col blue">
+                    <h2>Hue, Saturation, and Lightness</h2>
+                    <p>The RGB color scheme is convenient because it’s very close to how computers represent colors internally. There’s another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as HSL.</p>
+                    <p>The syntax for HSL is similar to the decimal form of RGB, though it differs in important ways. The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively. </p>
                 </div>
             </div>
         </div>
