@@ -125,3 +125,11 @@ p{
 .blue{
     background-color: blue;
 }
+
+.darkpink{
+    background-color: hsl(345,97%,37%);
+}
+
+.purple{
+    background-color: hsl(254,71%,31%);
+}

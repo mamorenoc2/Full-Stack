@@ -15,6 +15,8 @@
                 <li><a href="#hexadecimal">Hexadecimal</a></li>
                 <li><a href="#RGB">RGB</a></li>
                 <li><a href="#HSL">HSL</a></li>
+                <li><a href="#opacity">Opacity</a></li>
+                <li><a href="#alpha">Alpha</a></li>
             </ul>
         </nav>
     </header>
@@ -80,6 +82,17 @@
                     <p>Saturation refers to the intensity or purity of the color. The saturation increases towards 100% as the color becomes richer. The saturation decreases towards 0% as the color becomes grayer.</p>
                     <p>Lightness refers to how light or dark the color is. Halfway, or 50%, is normal lightness. Imagine a sliding dimmer on a light switch that starts halfway. Sliding the dimmer up towards 100% makes the color lighter, closer to white. Sliding the dimmer down towards 0% makes the color darker, closer to black.</p>
                     <p>HSL is convenient for adjusting colors. In RGB, making the color a little darker may affect all three color components. In HSL, that’s as easy as changing the lightness value. HSL is also useful for making a set of colors that work well together by selecting various colors that have the same lightness and saturation but different hues.</p>
+                </div>
+                <div class="col darkpink" id="opacity">
+                    <h2>Opacity</h2>
+                    <p>All of the colors we’ve seen so far have been opaque, or non-transparent. When we overlap two opaque elements, nothing from the bottom element shows through the top element. In this exercise, we’ll change the opacity, or the amount of transparency, of some colors so that some or all of the bottom elements are visible through a covering element.</p>
+                </div>
+                <div class="col purple" id="alpha">
+                    <h2>Alpha</h2>
+                    <p>Alpha is a decimal number from zero to one. If alpha is zero, the color will be completely transparent. If alpha is one, the color will be opaque. The value for half-transparent would be 0.5.</p>
+                    <p>To use opacity in the HSL color scheme, use hsla instead of hsl, and four values instead of three.</p>
+                    <p>The RGB color scheme has a similar syntax for opacity, rgba. Again, the first three values work the same as rgb and the last value is the alpha.</p>
+                    <p>Alpha can only be used with HSL, RGB, and hex colors; we cannot add the alpha value to name colors like green.</p>
                 </div>
             </div>
         </div>
