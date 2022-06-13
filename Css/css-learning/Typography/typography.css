@@ -6,14 +6,15 @@ html, body {
 }
 
 header{
-    background-color: rgb(121, 79, 16);
-    position: fixed;
-    top: 0px;
-    z-index: 1;
+
     width: 100%;
 }
 
 nav{
+    background-color: rgb(121, 79, 16);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
     margin: 0;
     width: 100%;
     height: 70px;
@@ -23,7 +24,6 @@ nav li{
     display: inline-block;
     width: 100px;
     height: 40px;
-    margin: 10px 0px;
 }
 
 nav li a{
@@ -41,4 +41,88 @@ nav li a:hover{
     width: 100%;
     text-align: center;
     font-weight: bolder;
+}
+
+.banner{
+    background-image: url(/Css/css-learning/img-learning/Open-book.jpg);
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+main{
+    padding-top: 60px;
+}
+
+main h1{
+    color: black;
+    font-family: "Brush Script MT";
+    font-weight: 600;
+    font-size: 150px;
+    padding-top: 60px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style-position: inside;
+}
+code{
+    background-color: hsl(20, 50%, 70%);
+    border: 1px;
+    border-radius: 10%;
+}
+
+.prin{
+    margin-top: 5px;
+}
+.prin h2{
+    font-size: 35px;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.col{
+    display: block;
+    margin: 0 auto;
+}
+.col h3{
+    font-size: 26px;
+    color: rgb(121, 79, 16);
+}
+.col ul{
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: justify;
+}
+
+
+
+.mid{
+    display: inline-block;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+    margin: 0px 30px;
+    font-size: 25px;
+    background-color: hsl(20, 50%, 70%);
+    border-radius: 10%;
+}
+
+.mid h3{
+    color: black;
+}
+.serif{
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: serif;
+}
+.sans-serif{
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: sans-serif;
 }

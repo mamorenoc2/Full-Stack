@@ -12,6 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#font">Font Family</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +31,44 @@
                     <li>How to lay text out on a page.</li>
                     <li>How to add external fonts to your web pages.</li>
                 </ul>
-                <p>Some of the most important information a user will see on a web page will be textual. Styling text to make page content accessible and engaging can significantly improve user experience. Let’s begin!</p>
+                <p>Some of the most important information a user will see on a web page will be textual.</p>
+                <p>Styling text to make page content accessible and engaging can significantly improve user experience. Let’s begin</p>
+            </div>
+            <div class="col" id="font"> 
+                <h2>Font Family</h2>
+                <p>Let’s talk about some things to keep in mind when setting font-family values.</p>
+                <div class="col">
+                    <h3>Multi-Words Values</h3>
+                    <p>When specifying a typeface with multiple words, like Times New Roman, it is recommended to use quotation marks <code>(' ')</code> to group the words together</p>
+                </div>
+                <div class="col" >
+                    <h3>Web safe Fonts</h3>
+                    <p>There is a selection of fonts that will appear the same across all browsers and operating systems. These fonts are referred to as web safe fonts.</p>
+                    <p>You can check out a complete list of web safe fonts <a href="https://www.cssfontstack.com/" target="_blank">here</a></p>
+                </div>
+                <div class="col">
+                    <h3>Fallback Fonts and Font Stacks</h3>
+                    <p>Web safe fonts are good fallback fonts that can be used if your preferred font is not available.</p>
+                    <p> When you specify a group of fonts, you have what is known as a font stack. A font stack usually contains a list of similar-looking fonts. </p>
+                </div>
+                <div class="col">
+                    <h3>Serif and Sans-Serif</h3>
+                    <p>You may be wondering what features make a font similar to another font.</p>
+                    <p>Serif fonts have extra details on the ends of each letter, as opposed to Sans-Serif fonts, which do not have the extra details.</p>
+                    <div class="col">
+                        <div class="mid">
+                            <h3>Serif</h3>
+                            <p>Serif fonts have extra details on the ends of the main strokes of the letters. These strokes are called serifs</p>
+                            <p class="serif">H e l l o</p>
+                        </div>
+                        <div class="mid">
+                            <h3>Sans-Serif</h3>
+                            <p>Sans Serif fonts lack those extra on the ends of letters and have flat ends.This give them a cleaner, more modern look.</p>
+                            <p class="sans-serif">H e l l o</p>
+                        </div>
+                    </div>
+                    <p><code>serif</code> and <code>sans-serif</code> are also keyword values that can be added as a final fallback font if nothing else in the font stack is available.</p>
+                </div>
             </div>
         </div>
     </section>
