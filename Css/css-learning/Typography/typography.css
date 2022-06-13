@@ -88,7 +88,7 @@ code{
 }
 .col{
     display: block;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .col h3{
     font-size: 26px;
@@ -99,8 +99,6 @@ code{
     max-width: fit-content;
     text-align: justify;
 }
-
-
 
 .mid{
     display: inline-block;

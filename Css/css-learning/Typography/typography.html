@@ -12,7 +12,8 @@
         <nav>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#font">Font Family</a></li>
+                <li><a href="#font-family">Font Family</a></li>
+                <li><a href="#font-weight">Font Weight</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +35,9 @@
                 <p>Some of the most important information a user will see on a web page will be textual.</p>
                 <p>Styling text to make page content accessible and engaging can significantly improve user experience. Let’s begin</p>
             </div>
-            <div class="col" id="font"> 
+        </div>
+        <div class="container">
+            <div class="col" id="font-family"> 
                 <h2>Font Family</h2>
                 <p>Let’s talk about some things to keep in mind when setting font-family values.</p>
                 <div class="col">
@@ -68,6 +71,24 @@
                         </div>
                     </div>
                     <p><code>serif</code> and <code>sans-serif</code> are also keyword values that can be added as a final fallback font if nothing else in the font stack is available.</p>
+                </div>
+            </div>
+            <div class="container" id="font-weight">
+                <h2>Font Weight</h2>
+                <p>In CSS, the <code>font-weight</code> property controls how bold or thin text appears. It can be specified with keywords or numerical values.</p>
+                <div class="col">
+                    <h3>Keyword Values</h3>
+                    <p>The font-weight property can take any one of these keyword values:</p>
+                    <ul>
+                        <li><strong>bold: </strong>Bold font weight</li>
+                        <li><strong>normal: </strong> Normal font weight</li>
+                        <li><strong>lighter: </strong> One font weight lighter than the element's parent value</li>
+                        <li><strong>bold: </strong> One font weight bolder than the element’s parent value</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Numerical Values</h3>
+                    <p>Numerical values can range from 1 (lightest) to 1000 (boldest), but it is common practice to use increments of 100. A font weight of 400 is equal to the keyword value normal, and a font weight of 700 is equal to bold</p>
                 </div>
             </div>
         </div>
