@@ -14,6 +14,10 @@
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#font-family">Font Family</a></li>
                 <li><a href="#font-weight">Font Weight</a></li>
+                <li><a href="#font-style">Font Style</a></li>
+                <li><a href="#text-transform">Text Transform</a></li>
+                <li><a href="#text-layout">Text Layout</a></li>
+                <li><a href="#web-fonts">Web Fonts</a></li>
             </ul>
         </nav>
     </header>
@@ -73,23 +77,71 @@
                     <p><code>serif</code> and <code>sans-serif</code> are also keyword values that can be added as a final fallback font if nothing else in the font stack is available.</p>
                 </div>
             </div>
-            <div class="container" id="font-weight">
-                <h2>Font Weight</h2>
-                <p>In CSS, the <code>font-weight</code> property controls how bold or thin text appears. It can be specified with keywords or numerical values.</p>
-                <div class="col">
-                    <h3>Keyword Values</h3>
-                    <p>The font-weight property can take any one of these keyword values:</p>
+        </div>
+        <div class="container" id="font-weight">
+            <h2>Font Weight</h2>
+            <p>In CSS, the <code>font-weight</code> property controls how bold or thin text appears. It can be specified with keywords or numerical values.</p>
+            <div class="col">
+                <h3>Keyword Values</h3>
+                <p>The font-weight property can take any one of these keyword values:</p>
+                <ul>
+                    <li><strong>bold: </strong>Bold font weight</li>
+                    <li><strong>normal: </strong> Normal font weight</li>
+                    <li><strong>lighter: </strong> One font weight lighter than the element's parent value</li>
+                    <li><strong>bold: </strong> One font weight bolder than the element’s parent value</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Numerical Values</h3>
+                <p>Numerical values can range from 1 (lightest) to 1000 (boldest), but it is common practice to use increments of 100. A font weight of 400 is equal to the keyword value normal, and a font weight of 700 is equal to bold</p>
+            </div>
+        </div>
+        <div class="container" id="font-style">
+            <div class="col">
+                <h2>Font Style</h2>
+                <p>You can also italicize, Oblique and inherit text with the font-style property. </p>
+                <ul>
+                    <li> <strong>Normal:</strong> The browser displays a normal font style. This is default</li>
+                    <li> <strong>Italic:</strong> The browser displays an italic font style</li>
+                    <li> <strong>Oblique:</strong> The browser displays an oblique font style</li>
+                    <li> <strong>Inherit:</strong> Inherits this property from its parent element</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="text-transform">
+            <div class="col">
+                <h2>Text Transform</h2>
+                <p>Text can also be styled to appear in either all uppercase or lowercase with the text-transform property.</p>
+                <p>Depending on the type of content a web page displays, it may make sense to always style a specific element in all uppercase or lowercase letters. For example, a website that reports breaking news may decide to format all <h1> heading elements such that they always appear in all uppercase, as in the example above. It would also avoid uppercase text in the HTML file, which could make code difficult to read.</p>
                     <ul>
-                        <li><strong>bold: </strong>Bold font weight</li>
-                        <li><strong>normal: </strong> Normal font weight</li>
-                        <li><strong>lighter: </strong> One font weight lighter than the element's parent value</li>
-                        <li><strong>bold: </strong> One font weight bolder than the element’s parent value</li>
+                        <li><strong style="text-transform:capitalize ;">Capitalize</strong></li>
+                        <li><strong style="text-transform:uppercase ;">Uppercase</strong></li>
+                        <li><strong style="text-transform:lowercase ;">lowercase</strong></li>
+                        <li><strong style="text-transform:inherit ;">Inherit</strong></li>
                     </ul>
-                </div>
+            </div>
+        </div>
+        <div class="container" id="text-layout">
+            <div class="col">
+                <h2>Text Layout</h2>
+                <p>You’ve learned how text can be defined by font family, weight, style, and transformations. Now you’ll learn about some ways text can be displayed or laid out within the element’s container.</p>
                 <div class="col">
-                    <h3>Numerical Values</h3>
-                    <p>Numerical values can range from 1 (lightest) to 1000 (boldest), but it is common practice to use increments of 100. A font weight of 400 is equal to the keyword value normal, and a font weight of 700 is equal to bold</p>
+                    <h3>Letter Spacing</h3>
+                    <p>The <code>letter-spacing</code>property is used to set the horizontal spacing between the individual characters in an element. It’s not common to set the spacing between letters, but it can sometimes help the readability of certain fonts or styles.</p>
+                    <h3>Word Spacing</h3>
+                    <p>You can set the space between words with the <code>word-spacing</code> property. It’s also not common to increase the spacing between words, but it may help enhance the readability of bolded or enlarged text.</p>
+                    <h3>Line Height</h3>
+                    <p>We can use the line-height property to set how tall we want each line containing our text to be. Line height values can be a unitless number, such as 1.2, or a length value, such as 12px, 5% or 2em.</p>
+                    <h3>Text Alignment</h3>
+                    <p></p>
                 </div>
+            </div>
+        </div>
+        <div class="container" id="web-fonts">
+            <div class="col">
+                <h2>Web Fonts</h2>
+                <p>Online font services, like <a href="https://fonts.google.com/">Google Fonts</a>, make it easy to find and link to fonts from your site. You can browse and select fonts that match the style of your website.</p>
+                <p>When you’re done selecting a font and its styles, you can review your selected font family, and a <code> &lt; link &gt; </code> element will be automatically generated for you to use on your site!</p>
             </div>
         </div>
     </section>

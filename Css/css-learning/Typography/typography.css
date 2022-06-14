@@ -72,7 +72,8 @@ ul{
 code{
     background-color: hsl(20, 50%, 70%);
     border: 1px;
-    border-radius: 10%;
+    border-radius: 0.125rem;
+    font-family: monospace;
 }
 
 .prin{
