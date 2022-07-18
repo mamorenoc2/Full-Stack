@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="links-buttons.css">
+    <title>Links and buttons</title>
+</head>
+<body>
+    <header>
+        <h1>Links and buttons</h1>
+        <nav>
+            <ul>
+                <li> <a href="#introduction"> introduction</a></li>
+                <li> <a href="#display">display</a> </li>
+                <li> <a href="#browser-link-styles">Link styles</a> </li>
+                <li> <a href="#float">float</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Showing interactivity and clickability through signifiers is a fundamental aspect of user interface design. In this lesson, we will cover some of the high-level best practices for demonstrating interaction and interactivity and some implementations using CSS.</p>
+        </section>
+
+        <section id="browser-link-styles">
+            <h2>Browser Link Styles</h2>
+            <p>Traditionally, links are differentiated from regular text using blue text and underlines to draw users’ attention to their clickability. Many websites and user agent stylesheets still use these link styles.</p>
+                <p>Browsers also style two other link states: clicked (‘active’), and previously visited. In most user agent stylesheets, clicked (but not yet followed) links appear with red text, and previously visited links are styled with purple text.</p>
+            <article>
+                <h3>Link Styling</h3>
+                <p>The most important aspect of styling links is differentiating links from surrounding text. The default blue-text, underlined link style accomplishes this differentiation using two CSS properties: color and text-decoration. These are both good ways to differentiate a link, and they are strong, familiar signifiers to most web users. Additionally, you could use CSS properties for background-color, font-weight, or border</p>
+                <p>Link styles should not be replicated in other page text. Link color should sufficiently contrast the text colors in the rest of the design. For example, if links are underlined, other text should not be.</p>
+                <p> <b>Anchor text</b>, the text itself of a link, should be descriptive of the linked resource. Although this is not strictly a design problem, it is important for usability, accessibility, and SEO.</p>
+                <p>In addition to providing descriptive anchor text, it is sometimes helpful to provide additional context to explain links. This context can be particularly helpful when a link contains or consists of an image, icon, or another non-text element.</p>
+                <p>Additional context can be provided as text using the HTML title attribute. Although the title attribute can be provided to any HTML element, it is often extremely useful as additional context or advisory text for clickable elements.</p>
+                <p>Most browsers will display the text of a title attribute as a tooltip, meaning when a user hovers their cursor over an element, the text will appear in a small box near the cursor. Example:</p>
+                <div class="example"><a href="#" >This is a normal link</a></div>
+                <div class="example"><a href="#" title="This is the title!">This is a normal link with title</a></div>
+            </article>
+        </section>
+        <section id="hover-states-and-cursors">
+            <h2>Hover States and Cursors</h2>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+</body>
+</html>
