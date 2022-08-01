@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+
+.navegation {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    color: #2176FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
