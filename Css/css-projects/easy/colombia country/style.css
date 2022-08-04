@@ -1,10 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: azure;
-    font-family: 'Jost', sans-serif;
+    background-color: whitesmoke;
     font-family: 'Oswald', sans-serif;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Jost', sans-serif;
+    
 }
 
 .navegation {
@@ -12,10 +12,61 @@ body{
     text-align: center;
     top: 0;
     width: 100%;
+    z-index: 999;
+    background-color: whitesmoke;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
     color: #2176FF;
     text-decoration: underline;
     cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navegation a{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 40px;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #164899;
+}
+a.logo{
+    color:black;
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    padding: 0px 60px;
+    text-align: centers;
+}
+
+.banner{
+    background-image: url(/Css/css-projects/easy/images/Colombia-banner.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-bottom: 1px solid #dddddd;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+}
+
+.banner-text{
+    position: relative;
+    top: 200px;
 }
