@@ -15,3 +15,57 @@
 .breadcrumb a:hover {
     color: red;
 }
+
+.breadcrumb2 {
+    text-align: left;
+  }
+  .breadcrumb2 li {
+    float: left;
+  }
+  .breadcrumb2 a {
+    background-color: inherit;  
+    color: #fff;
+    background: darkcyan;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+  }
+  
+  .breadcrumb2 a::before,
+  .breadcrumb2 a::after {
+    content: "";
+    position: absolute;
+    border-color: darkcyan;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+  
+  .breadcrumb2 a::before {
+    left: -10px;
+    border-left-color: transparent;
+  }
+  .breadcrumb2 a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: darkcyan;
+  }
+  
+  .breadcrumb2 a:hover {
+    background-color: blue;
+  }
+  .breadcrumb2 a:hover::before {
+    border-color: blue;
+    border-left-color: transparent;
+  }
+  .breadcrumb2 a:hover::after {
+    border-left-color: blue;
+  }
+
+  .breadcrumb2 li{
+    margin:0px;
+    list-style: none;
+}

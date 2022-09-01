@@ -1,0 +1,417 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:darkgray;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+nav{
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav li{
+    display: inline-block;
+    width: 100px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+main{
+    position: relative;
+    text-align: center;
+    height: 300px;
+}
+
+.banner h1{
+    margin-top: 80px;
+    padding-top: 50px;
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.banner:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pattern.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.banner *{
+    position: relative;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+/* COLORS */
+
+#colors{
+    padding: 10px;
+    margin: 10px;
+    background-color:lightgrey;
+}
+
+#colors h2{
+    font-size: 80px;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: black;
+}
+
+#colors .reds h3{
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: red;
+}
+
+#colors .greens h3{
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 1.3px;
+  color: hsl(130, 100%, 50%);
+}
+
+#colors .blues h3{
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 1.3px;
+  color:  hsl(220, 100%, 50%);
+}
+
+
+#colors .colors-swap{
+    width: 100%;
+}
+
+#colors .colors-swap h4{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: black;
+}
+
+#colors .colors-swap p{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+#colors .swatch {
+    display: flex;
+    height: 6.6875rem;
+    border: 10px solid #e6e6e6;
+    margin-bottom: 1.25rem;
+}
+
+#colors .swatch:last-child {
+    margin-bottom: 0;
+}
+
+#colors .swatch > div {
+    flex-grow: 1;
+    border-right: 10px solid #e6e6e6;
+}
+
+#colors .swatch > div:last-child {
+    border-right: 0;
+}
+
+
+  /* Red Swatches */
+  
+  .reds .base-color {
+    background-color: hsl(350, 100%, 50%);
+  }
+  
+  /* Red lightness decreases by 15 */
+  .reds .lightness .color-1 {
+    background-color: hsl(350, 100%, 80%);
+  }
+  
+  .reds .lightness .color-2 {
+    background-color: hsl(350, 100%, 65%);
+  }
+  
+  .reds .lightness .color-3 {
+    background-color: hsl(350, 100%, 50%);
+  }
+  
+  .reds .lightness .color-4 {
+    background-color: hsl(350, 100%, 35%);
+  }
+  
+  .reds .lightness .color-5 {
+    background-color: hsl(350, 100%, 20%);
+  }
+  
+  /* Red saturation decreases by 15 */
+  .reds .saturation .color-1 {
+    background-color: hsl(350, 100%, 50%);
+  }
+  
+  .reds .saturation .color-2 {
+    background-color: hsl(350, 85%, 50%);
+  }
+  
+  .reds .saturation .color-3 {
+    background-color: hsl(350, 70%, 50%);
+  }
+  
+  .reds .saturation .color-4 {
+    background-color: hsl(350, 55%, 50%);
+  }
+  
+  .reds .saturation .color-5 {
+    background-color: hsl(350, 40%, 50%);
+  }
+  
+  /* Red hue increases by 15 */
+  .reds .hue .color-1 {
+    background-color: hsl(320, 100%, 50%);
+  }
+  
+  .reds .hue .color-2 {
+    background-color: hsl(335, 100%, 50%);
+  }
+  
+  .reds .hue .color-3 {
+    background-color: hsl(350, 100%, 50%);
+  }
+  
+  .reds .hue .color-4 {
+    background-color: hsl(5, 100%, 50%);
+  }
+  
+  .reds .hue .color-5 {
+    background-color: hsl(20, 100%, 50%);
+  }
+
+  .greens .base-color {
+    color: hsl(130, 100%, 50%);
+  }
+  
+  /* Green lightness decreases by 20 */
+  .greens .lightness .color-1 {
+    background-color: hsl(103, 100%, 90%);
+  }
+  
+  .greens .lightness .color-2 {
+    background-color: hsl(103, 100%, 70%);
+  }
+  
+  .greens .lightness .color-3 {
+    background-color: hsl(103, 100%, 50%);
+  }
+  
+  .greens .lightness .color-4 {
+    background-color: hsl(103, 100%, 30%);
+  }
+  
+  .greens .lightness .color-5 {
+    background-color: hsl(104, 100%, 10%);
+  }
+  
+  /* Green saturation decreases by 20 */
+  .greens .saturation .color-1 {
+    background-color: hsl(130, 100%, 50%);
+  }
+  
+  .greens .saturation .color-2 {
+    background-color: hsl(130, 80%, 50%);
+  }
+  
+  .greens .saturation .color-3 {
+    background-color: hsl(130, 60%, 50%);
+  }
+  
+  .greens .saturation .color-4 {
+    background-color: hsl(130, 40%, 50%);
+  }
+  
+  .greens .saturation .color-5 {
+    background-color: hsl(130, 20%, 50%);
+  }
+  
+  /* Green hue increases by 22 */
+  .greens .hue .color-1 {
+    background-color: hsl(122, 100%, 50%);
+  }
+  
+  .greens .hue .color-2 {
+    background-color: hsl(108, 100%, 50%);
+  }
+  
+  .greens .hue .color-3 {
+    background-color: hsl(130, 100%, 50%);
+  }
+  
+  .greens .hue .color-4 {
+    background-color: hsl(152, 100%, 50%);
+  }
+  
+  .greens .hue .color-5 {
+    background-color: hsl(174, 100%, 50%);
+  }
+
+/* Blue Swatches */
+  
+.blues .base-color {
+  color: hsl(220, 100%, 50%);
+}
+
+/* Blue lightness decreases by 20 */
+.blues .lightness .color-1 {
+  background-color: hsl(220, 100%, 90%);
+}
+
+.blues .lightness .color-2 {
+  background-color: hsl(220, 100%, 70%);
+}
+
+.blues .lightness .color-3 {
+  background-color: hsl(220, 100%, 50%);
+}
+
+.blues .lightness .color-4 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.blues .lightness .color-5 {
+  background-color: hsl(220, 100%, 10%);
+}
+
+/* Blue saturation decreases by 20 */
+.blues .saturation .color-1 {
+  background-color: hsl(220, 100%, 50%);
+}
+
+.blues .saturation .color-2 {
+  background-color: hsl(220, 80%, 50%);
+}
+
+.blues .saturation .color-3 {
+  background-color: hsl(220, 60%, 50%);
+}
+
+.blues .saturation .color-4 {
+  background-color: hsl(220, 40%, 50%);
+}
+
+.blues .saturation .color-5 {
+  background-color: hsl(220, 20%, 50%);
+}
+
+/* Blue hue decreases by 20 */
+.blues .hue .color-1 {
+  background-color: hsl(260, 100%, 50%);
+}
+
+.blues .hue .color-2 {
+  background-color: hsl(240, 100%, 50%);
+}
+
+.blues .hue .color-3 {
+  background-color: hsl(220, 100%, 50%);
+}
+
+.blues .hue .color-4 {
+  background-color: hsl(200, 100%, 50%);
+}
+
+.blues .hue .color-5 {
+  background-color: hsl(180, 100%, 50%);
+}
+
+
+/* FONTS */
+
+#fonts{
+    padding: 10px;
+    margin: 50px;
+    background-color:lightgrey;
+}
+
+#fonts h2{
+    font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: black;
+}
+
+/* TEXT STYLES */
+
+#text-styles{
+    padding: 10px;
+    margin: 50px;
+    background-color:lightgrey;
+}
+
+#text-styles h2{
+    font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: black;
+}
+
+
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: darkgray;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer p{
+    color: black;
+    font-weight: bold;
+}
