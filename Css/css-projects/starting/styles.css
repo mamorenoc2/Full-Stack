@@ -78,6 +78,14 @@ main{
     padding: 0 10px;
     text-align: center;
 }
+
+.mini-container {
+  max-width: 310px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  text-align: center;
+  display: inline-block;
+}
 /* COLORS */
 
 #colors{
@@ -369,6 +377,40 @@ main{
 
 /* FONTS */
 
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+.monserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+.roboto-condensed{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+.thin{
+  font-weight: 100;
+}
+.light{
+  font-weight: 300;
+}
+.regular{
+  font-weight: 400;
+}
+.bold{
+  font-weight: 700;
+}
+.bolder{
+  font-weight: 900;
+}
+
 #fonts{
     padding: 10px;
     margin: 50px;
@@ -381,6 +423,18 @@ main{
     text-align: center;
     letter-spacing: 1.3px;
     color: black;
+}
+#fonts h3{
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 1.3px;
+  padding: 0 auto;;
+  color: black;
+}
+
+#fonts p{
+  font-size: 21px;
+  line-height: 0.95px;
 }
 
 /* TEXT STYLES */
@@ -398,8 +452,6 @@ main{
     letter-spacing: 1.3px;
     color: black;
 }
-
-
 
 
 footer{
