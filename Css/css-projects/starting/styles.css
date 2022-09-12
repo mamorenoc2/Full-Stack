@@ -416,7 +416,9 @@ main{
 .tiro-blanga{
   font-family: 'Tiro Bangla', serif;
 }
-
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
 
 .thin{
   font-weight: 100;
@@ -467,7 +469,7 @@ main{
 
 #text-styles{
     padding: 10px;
-    margin: 50px;
+    margin: 50px 50px 100px 50px;
     background-color:lightgrey;
 }
 
@@ -479,7 +481,30 @@ main{
     color: black;
 }
 
+#text-styles h2{
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 1.3px;
+  color: black;
+  padding: 0 auto;
+}
+#text-styles h3{
+font-size: 50px;
+text-align: center;
+letter-spacing: 1.3px;
+padding: 0 auto;
+margin: 0 auto;
+color: black;
+}
+#text-styles p{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  }
 
+
+/* FOOTER*/
 footer{
     position: fixed;
     width: 100%;
