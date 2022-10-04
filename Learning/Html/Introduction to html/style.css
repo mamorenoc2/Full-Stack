@@ -1,0 +1,15 @@
+img{
+    width: 100px;
+}
+
+code{
+    background-color: #eae9ed;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 0.25rem;
+    margin: 0 0.0625rem;
+    border-radius: 0.125rem;
+    color: #15141f;
+    background-color: #eae9ed;
+    white-space: normal;
+    vertical-align: baseline;
+}
