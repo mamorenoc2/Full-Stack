@@ -123,6 +123,117 @@
         <video src="/Learning/Html/Introduction to html/4 Increíbles Extensiones de Visual Studio Code para HTML _480p.mp4" width="320" height="240" controls> Video not supported</video>
 
     </section>
+    <section id="links">
+        <h2>Links</h2>
+        <p>One of the powerful aspects of HTML (and the Internet), is the ability to link to other web pages. You can add links to a web page by adding an anchor element ( a ) and including the text of the link in between the opening and closing tags.</p>
+        <img src="/Learning/Html/Introduction to html/Link.PNG" alt="anchor link">
+        <p>Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link above supposed to work if there is no URL that will lead users to the actual Wikipedia page?. The anchor element in the example above is incomplete without the href attribute. This attribute stands for hyperlink reference and is used to link to a path, or the address to where a file is located (whether it is on your computer or another location). The paths provided to the href attribute are often URLs.</p>
+        <img src="/Learning/Html/Introduction to html/Link href.PNG" alt="link href">
+        <p>In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.</p>
+
+        <h3>Open Links</h3>
+        <p>Have you ever clicked on a link and observed the resulting web page open in a new browser window? If so, you can thank the ( a )  element’s target attribute. The target attribute specifies how a link should open.</p>
+        <p>For a link to open in a new window, the target attribute requires a value of _blank. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute</p>
+        <img src="/Learning/Html/Introduction to html/Link _blank.PNG" alt="link anchor with blank target">
+
+        <p>Thus far you have learned how to link to external web pages. Many sites also link to internal web pages like Home, About, and Contact. HTML files are often stored in the same folder, as shown in the example above. If the browser is currently displaying index.html, it also knows that about.html and contact.html are in the same folder. Because the files are stored in the same folder, we can link web pages together using a relative path.</p>
+        <img src="/Learning/Html/Introduction to html/Link internal page.PNG" alt="link anchor for internal pages">
+
+        <p>You’ve probably visited websites where not all links were made up of text. Maybe the links you clicked on were images or some other form of content. HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, it’s possible to turn images into links by simply wrapping the <img> element with an ( a ) element.</p>
+        <img src="/Learning/Html/Introduction to html/Link img.PNGs" alt="">
+    </section>
+
+    <section id="tables">
+        <h2>Tables</h2>
+        <h3>Create a table</h3>
+        <p>There are many websites on the Internet that display information like stock prices, sports scores, invoice data, and more. This data is tabular in nature, meaning that a table is often the best way of presenting the data.</p>
+        <ul>
+            <li>
+                <p>Before displaying data, we must first create the table that will contain the data by using the ( table ) element.</p>
+            </li>
+            <li>
+                <h4>Table rows:</h4>
+                <p> The first step in entering data into the table is to add rows using the table row element: ( tr ).</p>
+                <img src="/Learning/Html/Introduction to html/table.PNG" alt="Table rows">
+            </li>
+            <li>
+                <h4>Table data:</h4>
+                <p>Rows aren’t sufficient to add data to a table. Each cell element must also be defined. In HTML, you can add data using the table data element: ( td )</p>
+                <img src="/Learning/Html/Introduction to html/table data.PNG" alt="Table data">
+            </li>
+            <li>
+                <h4>Table headings:</h4>
+                <p>Table data doesn’t make much sense without titles to describe what the data represents, to add titles to rows and columns, you can use the table heading element: ( th )</p>
+                <img src="/Learning/Html/Introduction to html/table heading.PNG" alt="Table heading">
+                <p>For example, in this table a new row was added to hold the three headings: a blank heading, a Saturday heading, and a Sunday heading. The blank heading creates the extra table cell necessary to align the table headings correctly over the data they correspond to.</p>
+                <p>In the second row, one table heading was added as a row title: Temperature</p>
+                <p>Note, also, the use of the scope attribute, which can take one of two values</p>
+                <ol>
+                    <li>row: This value makes it clear that the heading is for a row</li>
+                    <li>col: This value makes it clear that the heading is for a column</li>
+                </ol>
+                <br>
+                <img src="/Learning/Html/Introduction to html/table heading2.PNG" alt="Table ">
+            </li>
+            <li>
+                <h4>Spanning Columns</h4>
+                <p>What if the table contains data that spans multiple columns? For example, a personal calendar could have events that span across multiple hours, or even multiple days.</p>
+                <p>Data can span columns using the colspan attribute. The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Out of Town</td>
+                        <td>Back in Town</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <h4>Spanning rows</h4>
+                <p>Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
+                <table border="1">
+                    <tr>
+                        <!-- Row 1 -->
+                        <th></th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <!-- Row 2 -->
+                        <th>Morning</th>
+                        <td rowspan="2">Work</td>
+                        <td rowspan="3">Relax</td>
+                    </tr>
+                    <tr>
+                        <!-- Row 3 -->
+                        <th>Afternoon</th>
+                    </tr>
+                    <tr>
+                        <!-- Row 4 -->
+                        <th>Evening</th>
+                        <td>Dinner</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <h4>Table Head and Body</h4>
+                <p>Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage. Long tables can be sectioned off using the table body element: ( tbody ) and (thead).</p>
+                <p>When a table’s body is sectioned off, however, it also makes sense to section off the table’s column headings using the ( thead ) element</p>
+                <p>The ( tbody ) element should contain all of the table’s data, excluding the table headingss</p>
+                <img src="/Learning/Html/Introduction to html/table structure.PNG" alt="Table heading and Table body">
+                <p>The bottom part of a long table can also be sectioned off using the (tfoot) element.</p>
+
+            </li>
+        </ul>
+        
+        
+        
+
+    </section>
 
 </body>
 </html>
