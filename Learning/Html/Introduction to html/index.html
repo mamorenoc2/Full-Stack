@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to HTML</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="description">
@@ -61,27 +61,18 @@
                     </li>
                     <li>
                         <h3>Divs</h3>
-                        <p>One of the most popular elements in HTML because is a short for “division” or a container that divides
-                            the page into sections. These sections are very useful for grouping elements in your HTML together.</p>
-                        <p> divs don’t inherently have a visual representation, but they are very useful when we want to apply
-                            custom styles to our HTML elements. divs allow us to group HTML elements to apply the same styles for
-                            all HTML elements inside. We can also style the div element as a whole.</p>
-                        <p> divs can contain any text or other HTML elements, such as links, images, or videos. Remember to always
-                            add two spaces of indentation when you nest elements inside of divs for better readability.</p>
+                        <p>One of the most popular elements in HTML because is a short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together.</p>
+                        <p> divs don’t inherently have a visual representation, but they are very useful when we want to apply custom styles to our HTML elements. divs allow us to group HTML elements to apply the same styles for all HTML elements inside. We can also style the div element as a whole.</p>
+                        <p> divs can contain any text or other HTML elements, such as links, images, or videos. Remember to always add two spaces of indentation when you nest elements inside of divs for better readability.</p>
                     </li>
                     <li>
                         <h3>Attributes</h3>
-                        <p> Attributes are content added to the opening tag of an element and can be used in several different ways,
-                            from providing information to changing styling. Attributes are made up of the name and the value. </p>
-                        <p>One commonly used attribute is the id. We can use the id attribute to specify different content (such as
-                            divs) and is really helpful when you use an element more than once. ids have several different purposes
-                            in HTML, but for now, we’ll focus on how they can help us identify content on our page.</p>
+                        <p> Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the name and the value. </p>
+                        <p>One commonly used attribute is the id. We can use the id attribute to specify different content (such as divs) and is really helpful when you use an element more than once. ids have several different purposes in HTML, but for now, we’ll focus on how they can help us identify content on our page.</p>
                     </li>
                     <li>
                         <h3>Line breaks</h3>
-                        <p>The spacing between code in an HTML file doesn’t affect the positioning of elements in the browser. If
-                            you are interested in modifying the spacing in the browser, you can use HTML’s line break element: ( br
-                            ).</p>
+                        <p>The spacing between code in an HTML file doesn’t affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML’s line break element: <code>&lt;br&gt;</code>.</p>
                         <p>The line break element is unique because it is only composed of a starting tag. You can use it anywhere
                             within your HTML code and a line break will be shown in the browser.</p>
                     </li>
@@ -103,9 +94,9 @@
     <section id="list">
         <h2>List in HTML</h2>
         <h3>Unordered List</h3>
-        <p>In addition to organizing text in paragraph form, you can also display content in an easy-to-read list. In HTML, you can use an unordered list tag ( ul ) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.</p>
+        <p>In addition to organizing text in paragraph form, you can also display content in an easy-to-read list. In HTML, you can use an unordered list tag <code>&lt;ul&gt;</code> to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.</p>
 
-        <p>The ( ul ) element should not hold raw text and won’t automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the ( li ) tag. The ( li ) or list item tag is used to describe an item in a list.</p>
+        <p>The <code>&lt;ul&gt;</code> element should not hold raw text and won’t automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the <code>&lt;li&gt;</code> tag. The<code>&lt;li&gt;</code> or list item tag is used to describe an item in a list.</p>
 
         <ul>
             <li>ejemplo1</li>
@@ -115,7 +106,7 @@
 
 
         <h3>Ordered List</h3>
-        <p>Ordered lists ( ol ) are like unordered lists, except that each list item is numbered. They are useful when you need to list different steps in a process or rank items for first to last. You can create the ordered list with the ( ol ) tag and then add individual list items to the list using ( li ) tags.</p>
+        <p>Ordered lists <code>&lt;ol&gt;</code> are like unordered lists, except that each list item is numbered. They are useful when you need to list different steps in a process or rank items for first to last. You can create the ordered list with the <code>&lt;ol&gt;</code> tag and then add individual list items to the list using <code>&lt;li&gt;</code> tags.</p>
 
             <ol>
                 <li>ejemplo1</li>
@@ -126,8 +117,8 @@
 
     <section id="images">
         <h2>Images in HTML</h2>
-        <p>The ( img ) tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the ( img ) tag is a self-closing tag. Note that the end of the  ( img ) tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.</p>
-        <p>The  ( img ) tag has a <strong>required</strong> attribute called src. The src attribute must be set to the image’s source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored.</p>
+        <p>The <code>&lt;img&gt;</code> tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the <code>&lt;img&gt;</code> tag is a self-closing tag. Note that the end of the  <code>&lt;img&gt;</code> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.</p>
+        <p>The  <code>&lt;img&gt;</code> tag has a <strong>required</strong> attribute called src. The src attribute must be set to the image’s source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored.</p>
         <img src="/Learning/Html/Introduction to html/images/HTML image.jpg">
         <h3>Image Alts</h3>
         <p>Part of being an exceptional web developer is making your site accessible to users of all backgrounds. In order to make the Web more inclusive, we need to consider what happens when assistive technologies such as screen readers come across image tags.</p>
@@ -143,7 +134,7 @@
 
     <section id="video">
         <h2>Video in HTML</h2>
-        <p>In addition to images, HTML also supports displaying videos. Like the ( img ) element, the ( video ) element requires a src attribute with a link to the video source. Unlike the ( img ) element however, the ( video ) element requires an opening and a closing tag.</p>
+        <p>In addition to images, HTML also supports displaying videos. Like the <code>&lt;img&gt;</code> element, the <code>&lt;video&gt;</code> element requires a src attribute with a link to the video source. Unlike the <code>&lt;img&gt;</code> element however, the <code>&lt;video&gt;</code> element requires an opening and a closing tag.</p>
 
         <p>the video source (src) can be a video file that is hosted alongside your webpage, or a URL that points to a video file hosted on another webpage.</p>
         <p>After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
@@ -311,6 +302,17 @@
                     <li>Comments</li>
                     <li>Pull quotes</li>
                     <li>Editorial sidebars and Aditional information</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Figure</h3>
+                <p>The <code>&lt;figure&gt; </code> element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.</p>
+                <figure>
+                    <img src="/Learning/Html/Introduction to html/images/Figure.PNG" alt="Figure structure in HtML">
+                </figure>
+                <ul>
+                    <li>It’s possible to add a caption to the image by using ( figcaption ) </li>
+                    <p> ( figcaption ) is an element used to describe the media in the ( figure ) tag. Usually, ( figcaption ) will go inside ( figure ). This is different than using a ( p ) element to describe the content; if we decide to change the location of ( figure ), the paragraph tag may get displaced from the figure while a ( figcaption ) will move with the figure. This is useful for grouping an image with a caption</p>
                 </ul>
             </li>
         </ul>

@@ -1,6 +1,7 @@
 img{
-    width: 100px;
+    width: 400px;
 }
+
 
 code{
     background-color: #eae9ed;
@@ -8,8 +9,7 @@ code{
     padding: 0 0.25rem;
     margin: 0 0.0625rem;
     border-radius: 0.125rem;
-    color: #15141f;
-    background-color: #eae9ed;
+    color: black;
     white-space: normal;
     vertical-align: baseline;
 }
