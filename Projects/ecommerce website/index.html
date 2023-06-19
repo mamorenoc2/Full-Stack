@@ -32,12 +32,58 @@
           <a href="login-register.html" class="header__top-action">Log In / Sing Up</a>
         </div>
       </div>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="./assets/img/logo.svg" alt="" class="nav__logo">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="shop.html" class="nav__link">shop</a></li>
+            <li class="nav__item"><a href="accounts.html" class="nav__link">My accounts</a></li>
+            <li class="nav__item"><a href="compare.html" class="nav__link">compare</a></li>
+            <li class="nav__item"><a href="login-register.html" class="nav__link">Login</a></li>
+          </ul>
+
+          <div class="header__search">
+            <input type="text" placeholder="Search for items..." class="form__input">
+            <button class="search__btn">
+              <img src="./assets/img/search.png" alt="search">
+            </button>
+          </div>
+        </div>
+
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn">
+            <img src="./assets/img/icon-heart.svg" alt="favorites">
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header__action-btn">
+            <img src="./assets/img/icon-cart.svg" alt="cart">
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home"></section>
+      <section class="home section--lg">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Hot promotions</span>
+            <h1 class="home__title">Fashion Treding <span>Great Collection</span> </h1>
+            <p class="home__description">
+              Save more with coupons & up to 20% off
+            </p>
+            <a href="shop.html" class="btn">Shop Now</a>
+          </div>
+          <img src="./assets/img/home-img.png" alt="" class="home__img" />
+        </div>
+      </section>
 
       <!--=============== CATEGORIES ===============-->
       <section class="categories"></section>
