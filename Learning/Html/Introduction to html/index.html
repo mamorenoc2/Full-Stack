@@ -1,322 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction to HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <section id="description">
-        <h1>HTML</h1>
-        <p>HTML is the skeleton of all web pages. It's often the first language learned by developers, marketers, and
-            designers and is core to front-end development work</p>
-        <p>HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on
-            any page on the internet, choose “Inspect,” and you'll see HTML in a panel of your screen.</p>
-        <p>HTML stands for HyperText Markup Language:</p>
-        <ul>
-            <li>A markup language is a computer language that defines the structure and presentation of raw text.</li>
-            <li>In HTML, the computer can interpret raw text that is wrapped in HTML elements.</li>
-            <li>HyperText is text displayed on a computer or device that provides access to other text through links, also
-                known as hyperlinks. You probably clicked on a couple of hyperlinks on your way to this Codecademy course.
-            </li>
-            </ul>
-            <p>Learning HTML is the first step in creating websites, but even a bit of knowledge can help you inject code
-                snippets into newsletter, blog or website templates. </p>
-            </section>
-            <section id="anatomy">
-                <h2>HTML Anatomy</h2>
-                <p>HTML is composed of elements. These elements structure the webpage and define its content. Let's take a look at
-                    how
-                    they're written.</p>
-                <img src="/Learning/Html/Introduction to html/images/html lesson image.PNG" alt="Html">
-            </section>
-            <section id="body">
-                <h2>HTML Body</h2>
-                <p>One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and
-                    closing body tags can be displayed to the screen. </p>
-                <p>Once the file has a body, many different types of content – including text, images, and buttons – can be added to
-                    the body.</p>
-            </section>
-            <section id="structure">
-                <h2>HTML Structure</h2>
-                <p>HTML is organized as a collection of family tree relationships. When an element is contained inside another
-                    element, it is considered the <strong>child</strong> of that element, The child element is said to be nested
-                    inside of the parent element.</p>
-                <p>Since there can be multiple levels of nesting, this analogy can be extended to grandchildren,
-                    great-grandchildren, and beyond. The relationship between elements and their ancestor and descendent elements is
-                    known as hierarchy.</p>
-                <p>Understanding HTML hierarchy is important because child elements can inherit behavior and styling from their
+    <main>
+        <section id="description" class="container grid">
+            <div class="content">
+                <h1 class="section__title title-center">HTML</h1>
+                <div class="description__info">
+                    <p>HTML is the skeleton of all web pages. It's often the first language learned by developers,
+                        marketers, and designers and is core to front-end development work</p>
+                    <p>HTML provides structure to the content appearing on a website, such as images, text, or videos.
+                        Right-click on any page on the internet, choose “Inspect,” and you'll see HTML in a panel of
+                        your screen.</p>
+                    <p>HTML stands for HyperText Markup Language:</p>
+                    <ul>
+                        <li><i class="fa fa-code description__icon"></i> A markup language is a computer language
+                            that defines the structure and presentation of raw text.
+                        </li>
+                        <li><i class="fa fa-code description__icon"></i> In HTML, the computer can interpret raw
+                            text that is wrapped in HTML elements.</li>
+                        <li> <i class="fa fa-code description__icon"></i> HyperText is text displayed on a computer
+                            or device that provides access to other text through links, also known as hyperlinks. You
+                            probably clicked on a couple of hyperlinks on your way to this Codecademy course.
+                        </li>
+                    </ul>
+                    <p>Learning HTML is the first step in creating websites, but even a bit of knowledge can help you
+                        inject code snippets into newsletter, blog or website templates. </p>
+                </div>
+        </section>
+        <section id="anatomy" class="container grid">
+            <div class="content content_anatomy">
+                <div class="anatomy__info">
+                    <h2 class="section__title title-center">HTML Anatomy</h2>
+                    <p>HTML is composed of elements. These elements structure the webpage and define its content. Let's
+                        take a look at how they're written.</p>
+                </div>
+                <img class="anatomy__img" src="/Learning/Html/Introduction to html/images/html lesson image.PNG" alt="Html">
+            </div>
+        </section>
+        <section id="body" class="container grid">
+            <div class="content content_body">
+                <div class="body__info">
+                    <h2 class="section__title">HTML Body</h2>
+                    <p>One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen. </p>
+                    <p>Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body.</p>
+                </div>
+                <img src="./images/body.png" alt="body-anatomy-html" class="body__img">
+            </div>
+        </section>
+        <section id="structure" class="container grid">
+            <div class="content content_structure">
+                <h2 class="section__title title-center">HTML Structure</h2>
+                <p>HTML is organized as a collection of family tree relationships. When an element is contained inside another element, it is considered the <strong>child</strong> of that element, The child element is said to be nested inside of the parent element.</p>
+                <p>Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren, and beyond. The relationship between elements and their ancestor and descendent elements is known as hierarchy.</p>
+                <p>Understanding HTML hierarchy is important because child elements can inherit behavior and styling
+                    from their
                     parent element</p>
-            
-                <ul>
-                    <li>
-                        <h3>Heading</h3>
-                        <p>Headings in HTML are similar to headings in other types of media. For example, in newspapers, large
-                            headings are typically used to capture a reader’s attention. Other times, headings are used to describe
+                    <br>
+                    <div class="content content_str-heading">
+                        <h3 class="section__subtitle">Heading <code>&lt;h1&gt;&lt;/h1&gt;</code> </h3> 
+                        <p>Headings in HTML are similar to headings in other types of media. For example, in newspapers,
+                            large
+                            headings are typically used to capture a reader’s attention. Other times, headings are used
+                            to
+                            describe
                             content, like the title of a movie or an educational article.</p>
-                        <p>HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings
-                            can be used for a variety of purposes, like titling sections, articles, or other forms of content.</p>
-                    </li>
-                    <li>
-                        <h3>Divs</h3>
-                        <p>One of the most popular elements in HTML because is a short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together.</p>
-                        <p> divs don’t inherently have a visual representation, but they are very useful when we want to apply custom styles to our HTML elements. divs allow us to group HTML elements to apply the same styles for all HTML elements inside. We can also style the div element as a whole.</p>
-                        <p> divs can contain any text or other HTML elements, such as links, images, or videos. Remember to always add two spaces of indentation when you nest elements inside of divs for better readability.</p>
-                    </li>
-                    <li>
-                        <h3>Attributes</h3>
-                        <p> Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the name and the value. </p>
-                        <p>One commonly used attribute is the id. We can use the id attribute to specify different content (such as divs) and is really helpful when you use an element more than once. ids have several different purposes in HTML, but for now, we’ll focus on how they can help us identify content on our page.</p>
-                    </li>
-                    <li>
-                        <h3>Line breaks</h3>
-                        <p>The spacing between code in an HTML file doesn’t affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML’s line break element: <code>&lt;br&gt;</code>.</p>
-                        <p>The line break element is unique because it is only composed of a starting tag. You can use it anywhere
+                        <p>HTML follows a similar pattern. In HTML, there are six different headings, or heading
+                            elements.
+                            Headings
+                            can be used for a variety of purposes, like titling sections, articles, or other forms of
+                            content.
+                        </p>
+                    </div>
+                    <div class="content content_str-div">
+                        <h3 class="section__subtitle">Divs <code>&lt;div&gt;&lt;/div&gt;</code></h3>
+                        <p>One of the most popular elements in HTML because is a short for “division” or a container
+                            that
+                            divides the page into sections. These sections are very useful for grouping elements in your
+                            HTML
+                            together.</p>
+                        <p> divs don’t inherently have a visual representation, but they are very useful when we want to
+                            apply
+                            custom styles to our HTML elements. divs allow us to group HTML elements to apply the same
+                            styles
+                            for all HTML elements inside. We can also style the div element as a whole.</p>
+                        <p> divs can contain any text or other HTML elements, such as links, images, or videos. Remember
+                            to
+                            always add two spaces of indentation when you nest elements inside of divs for better
+                            readability.
+                        </p>
+                    </div>
+                    <div class="content content_str-attr">
+                        <h3 class="section__subtitle">Attributes <code>&lt;tag_name <strong>name="value"</strong>&gt;&lt;/tag_name&gt;</code></h3>
+                        <p> Attributes are content added to the opening tag of an element and can be used in several
+                            different
+                            ways, from providing information to changing styling. Attributes are made up of the name and
+                            the
+                            value. </p>
+                        <p>One commonly used attribute is the id. We can use the id attribute to specify different
+                            content (such
+                            as divs) and is really helpful when you use an element more than once. ids have several
+                            different
+                            purposes in HTML, but for now, we’ll focus on how they can help us identify content on our
+                            page.</p>
+                    </div>
+                    <div class="content content_str-lb">
+                        <h3 class="section__subtitle">Line Breaks <code>&lt;br&gt;&lt;/br&gt;</code></h3>
+                        <p>The spacing between code in an HTML file doesn’t affect the positioning of elements in the
+                            browser.
+                            If you are interested in modifying the spacing in the browser, you can use HTML’s line break
+                            element: <code>&lt;br&gt;</code>.</p>
+                        <p>The line break element is unique because it is only composed of a starting tag. You can use
+                            it
+                            anywhere
                             within your HTML code and a line break will be shown in the browser.</p>
+                    </div>
+            </div>
+        </section>
+        <section id="text" class="container grid">
+            <div class="content content__text">
+                <h2 class="section__title title-center">Displaying text in HTML</h2>
+                <p>If you want to display text in HTML, you can use a paragraph or span:</p>
+                <ul>
+                    <li> <i class="fa fa-code"></i><strong>Paragraphs</strong> <code>&lt;p&gt;</code> contain a block of plain text</li>
+                    <li> <i class="fa fa-code"></i><strong>Span</strong> <code>&lt;span&gt;</code> contains short pieces of text or other HTML. They are used to separate small pieces of
+                        content that
+                        are on the same line as other content.</li>
+                    <li><i class="fa fa-code"></i><strong>em</strong> <code>&lt;em&gt;</code> emphasizes text</li>
+                    <li><i class="fa fa-code"></i><strong>strong</strong> <code>&lt;strong&gt;</code> highlights important text.</li>
+                </ul>
+                <p> <strong>Note</strong> It’s best to use a span element when you want to target a specific piece of content that is
+                    inline, or
+                    on the same line as other text. If you want to divide your content into blocks, it’s better to use a
+                    div.
+                </p>
+            </div>
+        </section>
+        <section id="list" class="container grid">
+            <div class="content no-cuenta">
+                <h2 class="section__title title-center">List in HTML</h2>
+                <h3 class="section__subtitle">Unordered List</h3>
+                <p>In addition to organizing text in paragraph form, you can also display content in an easy-to-read
+                    list. In
+                    HTML, you can use an unordered list tag <code>&lt;ul&gt;</code> to create a list of items in no
+                    particular
+                    order. An unordered list outlines individual list items with a bullet point.</p>
+
+                <p>The <code>&lt;ul&gt;</code> element should not hold raw text and won’t automatically format raw text
+                    into an
+                    unordered list of items. Individual list items must be added to the unordered list using the
+                    <code>&lt;li&gt;</code> tag. The<code>&lt;li&gt;</code> or list item tag is used to describe an item
+                    in a
+                    list.
+                </p>
+
+                <ul class="no-cuenta">
+                    <li>ejemplo1</li>
+                    <li>ejemplo2</li>
+                    <li>ejemplo3</li>
+                </ul>
+
+                <h3 class="section__subtitle">Ordered List</h3>
+                <p>Ordered lists <code>&lt;ol&gt;</code> are like unordered lists, except that each list item is
+                    numbered. They
+                    are useful when you need to list different steps in a process or rank items for first to last. You
+                    can
+                    create the ordered list with the <code>&lt;ol&gt;</code> tag and then add individual list items to
+                    the list
+                    using <code>&lt;li&gt;</code> tags.</p>
+
+                <ol class="no-cuenta">
+                    <li>ejemplo1</li>
+                    <li>ejemplo2</li>
+                    <li>ejemplo3</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="images" class="container grid">
+            <div class="content">
+                <h2 class="section__title title-center">Images in HTML <code>&lt;img /&gt;</code> </h2>
+                <div class="image__info">
+                    <div>
+                        <p>The <code>&lt;img&gt;</code> tag allows you to add an image to a web page. Most elements require both
+                            opening
+                            and closing tags, but the <code>&lt;img&gt;</code> tag is a self-closing tag. Note that the end of
+                            the
+                            <code>&lt;img&gt;</code> tag has a forward slash /. Self-closing tags may include or omit the final
+                            slash —
+                            both will render properly.
+                        </p>
+                        <p>The <code>&lt;img&gt;</code> tag has a <strong>required</strong> attribute called src. The src
+                            attribute must
+                            be set to the image’s source, or the location of the image. In this case, the value of src must be
+                            the
+                            uniform resource locator (URL) of the image. A URL is the web address or local address where a file
+                            is
+                            stored.</p>
+                    </div>
+                    <img src="/Learning/Html/Introduction to html/images/HTML image.jpg">
+                </div>
+                <div class="content img__content-alts">
+                    <h3 class="section__subtitle">Image Alts <code>&lt;img <strong>alt = "value"</strong> /&gt;</code></h3>
+                <p>Part of being an exceptional web developer is making your site accessible to users of all
+                    backgrounds. In
+                    order to make the Web more inclusive, we need to consider what happens when assistive technologies
+                    such as
+                    screen readers come across image tags.</p>
+                <p>The alt attribute, which means alternative text, brings meaning to the images on our sites. The alt
+                    attribute
+                    can be added to the image tag just like the src attribute. The value of alt should be a description
+                    of the
+                    image.</p>
+                <p>The alt attribute also serves the following purposes:</p>
+                <ul>
+                    <li> <i class="fa fa-code"></i> If an image fails to load on a web page, a user can mouse over the area originally intended for
+                        the
+                        image and read a brief description of the image. This is made possible by the description you
+                        provide in
+                        the alt attribute.</li>
+                    <li> <i class="fa fa-code"></i> Visually impaired users often browse the web with the aid of screen reading software. When you
+                        include
+                        the alt attribute, the screen reading software can read the image’s description out loud to the
+                        visually
+                        impaired user.</li>
+                    <li><i class="fa fa-code"></i> The alt attribute also plays a role in Search Engine Optimization (SEO), because search engines
+                        cannot
+                        “see” the images on websites as they crawl the internet. Having descriptive alt attributes can
+                        improve
+                        the ranking of your site.</li>
+                </ul>
+                <p>If the image on the web page is not one that conveys any meaningful information to a user (visually
+                    impaired
+                    or otherwise), the alt attribute should be left empty.</p>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="container grid">
+            <div class="content">
+                <h2>Video in HTML</h2>
+                <p>In addition to images, HTML also supports displaying videos. Like the <code>&lt;img&gt;</code>
+                    element, the
+                    <code>&lt;video&gt;</code> element requires a src attribute with a link to the video source. Unlike
+                    the
+                    <code>&lt;img&gt;</code> element however, the <code>&lt;video&gt;</code> element requires an opening
+                    and a
+                    closing tag.
+                </p>
+
+                <p>the video source (src) can be a video file that is hosted alongside your webpage, or a URL that
+                    points to a
+                    video file hosted on another webpage.</p>
+                <p>After the src attribute, the width and height attributes are used to set the size of the video
+                    displayed in
+                    the browser. The controls attribute instructs the browser to include basic video controls such as
+                    pausing
+                    and playing.</p>
+                <p>The text between the opening and closing video tags will only be displayed if the browser is unable
+                    to load
+                    the video.</p>
+                <h4>4 Increíbles extensiones de visual Studio code para HTML</h4>
+                <video
+                    src="/Learning/Html/Introduction to html/4 Increíbles Extensiones de Visual Studio Code para HTML _480p.mp4"
+                    width="320" height="240" controls> Video not supported</video>
+            </div>
+        </section>
+        <section id="links" class="container grid">
+            <div class="content">
+                <h2>Links in HTML</h2>
+                <p>One of the powerful aspects of HTML (and the Internet), is the ability to link to other web pages.
+                    You can
+                    add links to a web page by adding an anchor element ( a ) and including the text of the link in
+                    between the
+                    opening and closing tags.</p>
+                <img src="/Learning/Html/Introduction to html/images/Link.PNG" alt="anchor link">
+                <p>Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link
+                    above
+                    supposed to work if there is no URL that will lead users to the actual Wikipedia page?. The anchor
+                    element
+                    in the example above is incomplete without the href attribute. This attribute stands for hyperlink
+                    reference
+                    and is used to link to a path, or the address to where a file is located (whether it is on your
+                    computer or
+                    another location). The paths provided to the href attribute are often URLs.</p>
+                <img src="/Learning/Html/Introduction to html/images/Link href.PNG" alt="link href">
+                <p>In the example above, the href attribute has been set to the value of the URL
+                    https://www.wikipedia.org/. The
+                    example now shows the correct use of an anchor element.</p>
+
+                <h3>Open Links</h3>
+                <p>Have you ever clicked on a link and observed the resulting web page open in a new browser window? If
+                    so, you
+                    can thank the ( a ) element’s target attribute. The target attribute specifies how a link should
+                    open.</p>
+                <p>For a link to open in a new window, the target attribute requires a value of _blank. The target
+                    attribute can
+                    be added directly to the opening tag of the anchor element, just like the href attribute</p>
+                <img src="/Learning/Html/Introduction to html/images/Link _blank.PNG"
+                    alt="link anchor with blank target">
+
+                <p>Thus far you have learned how to link to external web pages. Many sites also link to internal web
+                    pages like
+                    Home, About, and Contact. HTML files are often stored in the same folder, as shown in the example
+                    above. If
+                    the browser is currently displaying index.html, it also knows that about.html and contact.html are
+                    in the
+                    same folder. Because the files are stored in the same folder, we can link web pages together using a
+                    relative path.</p>
+                <img src="/Learning/Html/Introduction to html/images/Link internal page.PNG"
+                    alt="link anchor for internal pages">
+
+                <p>You’ve probably visited websites where not all links were made up of text. Maybe the links you
+                    clicked on
+                    were images or some other form of content. HTML allows you to turn nearly any element into a link by
+                    wrapping that element with an anchor element. With this technique, it’s possible to turn images into
+                    links
+                    by simply wrapping the <img> element with an ( a ) element.</p>
+                <img src="/Learning/Html/Introduction to html/images/HTML image.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="tables" class="container grid">
+            <div class="content">
+                <h2>Tables in HTML</h2>
+                <h3>Create a table</h3>
+                <p>There are many websites on the Internet that display information like stock prices, sports scores,
+                    invoice
+                    data, and more. This data is tabular in nature, meaning that a table is often the best way of
+                    presenting the
+                    data.</p>
+                <ul>
+                    <li>
+                        <p>Before displaying data, we must first create the table that will contain the data by using
+                            the (
+                            table ) element.</p>
+                    </li>
+                    <li>
+                        <h4>Table rows:</h4>
+                        <p> The first step in entering data into the table is to add rows using the table row element: (
+                            tr ).
+                        </p>
+                        <img src="/Learning/Html/Introduction to html/images/table.PNG" alt="Table rows">
+                    </li>
+                    <li>
+                        <h4>Table data:</h4>
+                        <p>Rows aren’t sufficient to add data to a table. Each cell element must also be defined. In
+                            HTML, you
+                            can add data using the table data element: ( td )</p>
+                        <img src="/Learning/Html/Introduction to html/images/table data.PNG" alt="Table data">
+                    </li>
+                    <li>
+                        <h4>Table headings:</h4>
+                        <p>Table data doesn’t make much sense without titles to describe what the data represents, to
+                            add titles
+                            to rows and columns, you can use the table heading element: ( th )</p>
+                        <img src="/Learning/Html/Introduction to html/images/table heading.PNG" alt="Table heading">
+                        <p>For example, in this table a new row was added to hold the three headings: a blank heading, a
+                            Saturday heading, and a Sunday heading. The blank heading creates the extra table cell
+                            necessary to
+                            align the table headings correctly over the data they correspond to.</p>
+                        <p>In the second row, one table heading was added as a row title: Temperature</p>
+                        <p>Note, also, the use of the scope attribute, which can take one of two values</p>
+                        <ol>
+                            <li>row: This value makes it clear that the heading is for a row</li>
+                            <li>col: This value makes it clear that the heading is for a column</li>
+                        </ol>
+                        <br>
+                        <img src="/Learning/Html/Introduction to html/images/table heading2.PNG" alt="Table ">
+                    </li>
+                    <li>
+                        <h4>Spanning Columns</h4>
+                        <p>What if the table contains data that spans multiple columns? For example, a personal calendar
+                            could
+                            have events that span across multiple hours, or even multiple days.</p>
+                        <p>Data can span columns using the colspan attribute. The attribute accepts an integer (greater
+                            than or
+                            equal to 1) to denote the number of columns it spans across.</p>
+                        <table border="1">
+                            <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Out of Town</td>
+                                <td>Back in Town</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <h4>Spanning rows</h4>
+                        <p>Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used
+                            for data
+                            that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It
+                            accepts
+                            an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
+                        <table border="1">
+                            <tr>
+                                <!-- Row 1 -->
+                                <th></th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                            <tr>
+                                <!-- Row 2 -->
+                                <th>Morning</th>
+                                <td rowspan="2">Work</td>
+                                <td rowspan="3">Relax</td>
+                            </tr>
+                            <tr>
+                                <!-- Row 3 -->
+                                <th>Afternoon</th>
+                            </tr>
+                            <tr>
+                                <!-- Row 4 -->
+                                <th>Evening</th>
+                                <td>Dinner</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <h4>Table Head and Body</h4>
+                        <p>Over time, a table can grow to contain a lot of data and become very long. When this happens,
+                            the
+                            table can be sectioned off so that it is easier to manage. Long tables can be sectioned off
+                            using
+                            the table body element: ( tbody ) and (thead).</p>
+                        <p>When a table’s body is sectioned off, however, it also makes sense to section off the table’s
+                            column
+                            headings using the ( thead ) element</p>
+                        <p>The ( tbody ) element should contain all of the table’s data, excluding the table headingss
+                        </p>
+                        <img src="/Learning/Html/Introduction to html/images/table structure.PNG"
+                            alt="Table heading and Table body">
+                        <p>The bottom part of a long table can also be sectioned off using the (tfoot) element.</p>
+
                     </li>
                 </ul>
-            </section>
-    <section id="text">
-        <h2>Text in HTML</h2>
-        <h3>Displayin text</h3>
-        <p>If you want to display text in HTML, you can use a paragraph or span:</p>
-        <ul>
-            <li>Paragraphs contain a block of plain text</li>
-            <li>Span contains short pieces of text or other HTML. They are used to separate small pieces of content that are on the same line as other content.</li>
-        </ul>
-        <p>Note: It’s best to use a span element when you want to target a specific piece of content that is inline, or on the same line as other text. If you want to divide your content into blocks, it’s better to use a div.</p>
+            </div>
 
-        <h3>Styling text</h3>
-        <p>You can also style text using HTML tags. The <em>em</em> tag emphasizes text, while the <strong>strong</strong> tag highlights important text.</p>
-    </section>
-    <section id="list">
-        <h2>List in HTML</h2>
-        <h3>Unordered List</h3>
-        <p>In addition to organizing text in paragraph form, you can also display content in an easy-to-read list. In HTML, you can use an unordered list tag <code>&lt;ul&gt;</code> to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.</p>
-
-        <p>The <code>&lt;ul&gt;</code> element should not hold raw text and won’t automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the <code>&lt;li&gt;</code> tag. The<code>&lt;li&gt;</code> or list item tag is used to describe an item in a list.</p>
-
-        <ul>
-            <li>ejemplo1</li>
-            <li>ejemplo2</li>
-            <li>ejemplo3</li>
-        </ul>
-
-
-        <h3>Ordered List</h3>
-        <p>Ordered lists <code>&lt;ol&gt;</code> are like unordered lists, except that each list item is numbered. They are useful when you need to list different steps in a process or rank items for first to last. You can create the ordered list with the <code>&lt;ol&gt;</code> tag and then add individual list items to the list using <code>&lt;li&gt;</code> tags.</p>
-
-            <ol>
-                <li>ejemplo1</li>
-                <li>ejemplo2</li>
-                <li>ejemplo3</li>
-            </ol>
-    </section>
-
-    <section id="images">
-        <h2>Images in HTML</h2>
-        <p>The <code>&lt;img&gt;</code> tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the <code>&lt;img&gt;</code> tag is a self-closing tag. Note that the end of the  <code>&lt;img&gt;</code> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.</p>
-        <p>The  <code>&lt;img&gt;</code> tag has a <strong>required</strong> attribute called src. The src attribute must be set to the image’s source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored.</p>
-        <img src="/Learning/Html/Introduction to html/images/HTML image.jpg">
-        <h3>Image Alts</h3>
-        <p>Part of being an exceptional web developer is making your site accessible to users of all backgrounds. In order to make the Web more inclusive, we need to consider what happens when assistive technologies such as screen readers come across image tags.</p>
-        <p>The alt attribute, which means alternative text, brings meaning to the images on our sites. The alt attribute can be added to the image tag just like the src attribute. The value of alt should be a description of the image.</p>
-        <p>The alt attribute also serves the following purposes:</p>
-        <ul>
-            <li>If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute.</li>
-            <li>Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image’s description out loud to the visually impaired user.</li>
-            <li>The alt attribute also plays a role in Search Engine Optimization (SEO), because search engines cannot “see” the images on websites as they crawl the internet. Having descriptive alt attributes can improve the ranking of your site.</li>
-        </ul>
-        <p>If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should be left empty.</p>
-    </section>
-
-    <section id="video">
-        <h2>Video in HTML</h2>
-        <p>In addition to images, HTML also supports displaying videos. Like the <code>&lt;img&gt;</code> element, the <code>&lt;video&gt;</code> element requires a src attribute with a link to the video source. Unlike the <code>&lt;img&gt;</code> element however, the <code>&lt;video&gt;</code> element requires an opening and a closing tag.</p>
-
-        <p>the video source (src) can be a video file that is hosted alongside your webpage, or a URL that points to a video file hosted on another webpage.</p>
-        <p>After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
-        <p>The text between the opening and closing video tags will only be displayed if the browser is unable to load the video.</p>
-        <h4>4 Increíbles extensiones de visual Studio code para HTML</h4>
-        <video src="/Learning/Html/Introduction to html/4 Increíbles Extensiones de Visual Studio Code para HTML _480p.mp4" width="320" height="240" controls> Video not supported</video>
-
-    </section>
-    <section id="links">
-        <h2>Links in HTML</h2>
-        <p>One of the powerful aspects of HTML (and the Internet), is the ability to link to other web pages. You can add links to a web page by adding an anchor element ( a ) and including the text of the link in between the opening and closing tags.</p>
-        <img src="/Learning/Html/Introduction to html/images/Link.PNG" alt="anchor link">
-        <p>Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link above supposed to work if there is no URL that will lead users to the actual Wikipedia page?. The anchor element in the example above is incomplete without the href attribute. This attribute stands for hyperlink reference and is used to link to a path, or the address to where a file is located (whether it is on your computer or another location). The paths provided to the href attribute are often URLs.</p>
-        <img src="/Learning/Html/Introduction to html/images/Link href.PNG" alt="link href">
-        <p>In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.</p>
-
-        <h3>Open Links</h3>
-        <p>Have you ever clicked on a link and observed the resulting web page open in a new browser window? If so, you can thank the ( a )  element’s target attribute. The target attribute specifies how a link should open.</p>
-        <p>For a link to open in a new window, the target attribute requires a value of _blank. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute</p>
-        <img src="/Learning/Html/Introduction to html/images/Link _blank.PNG" alt="link anchor with blank target">
-
-        <p>Thus far you have learned how to link to external web pages. Many sites also link to internal web pages like Home, About, and Contact. HTML files are often stored in the same folder, as shown in the example above. If the browser is currently displaying index.html, it also knows that about.html and contact.html are in the same folder. Because the files are stored in the same folder, we can link web pages together using a relative path.</p>
-        <img src="/Learning/Html/Introduction to html/images/Link internal page.PNG" alt="link anchor for internal pages">
-
-        <p>You’ve probably visited websites where not all links were made up of text. Maybe the links you clicked on were images or some other form of content. HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, it’s possible to turn images into links by simply wrapping the <img> element with an ( a ) element.</p>
-        <img src="/Learning/Html/Introduction to html/images/HTML image.jpg" alt="">
-    </section>
-
-    <section id="tables">
-        <h2>Tables in HTML</h2>
-        <h3>Create a table</h3>
-        <p>There are many websites on the Internet that display information like stock prices, sports scores, invoice data, and more. This data is tabular in nature, meaning that a table is often the best way of presenting the data.</p>
-        <ul>
-            <li>
-                <p>Before displaying data, we must first create the table that will contain the data by using the ( table ) element.</p>
-            </li>
-            <li>
-                <h4>Table rows:</h4>
-                <p> The first step in entering data into the table is to add rows using the table row element: ( tr ).</p>
-                <img src="/Learning/Html/Introduction to html/images/table.PNG" alt="Table rows">
-            </li>
-            <li>
-                <h4>Table data:</h4>
-                <p>Rows aren’t sufficient to add data to a table. Each cell element must also be defined. In HTML, you can add data using the table data element: ( td )</p>
-                <img src="/Learning/Html/Introduction to html/images/table data.PNG" alt="Table data">
-            </li>
-            <li>
-                <h4>Table headings:</h4>
-                <p>Table data doesn’t make much sense without titles to describe what the data represents, to add titles to rows and columns, you can use the table heading element: ( th )</p>
-                <img src="/Learning/Html/Introduction to html/images/table heading.PNG" alt="Table heading">
-                <p>For example, in this table a new row was added to hold the three headings: a blank heading, a Saturday heading, and a Sunday heading. The blank heading creates the extra table cell necessary to align the table headings correctly over the data they correspond to.</p>
-                <p>In the second row, one table heading was added as a row title: Temperature</p>
-                <p>Note, also, the use of the scope attribute, which can take one of two values</p>
-                <ol>
-                    <li>row: This value makes it clear that the heading is for a row</li>
-                    <li>col: This value makes it clear that the heading is for a column</li>
-                </ol>
-                <br>
-                <img src="/Learning/Html/Introduction to html/images/table heading2.PNG" alt="Table ">
-            </li>
-            <li>
-                <h4>Spanning Columns</h4>
-                <p>What if the table contains data that spans multiple columns? For example, a personal calendar could have events that span across multiple hours, or even multiple days.</p>
-                <p>Data can span columns using the colspan attribute. The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.</p>
-
-                <table border="1">
-                    <tr>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Out of Town</td>
-                        <td>Back in Town</td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <h4>Spanning rows</h4>
-                <p>Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
-                <table border="1">
-                    <tr>
-                        <!-- Row 1 -->
-                        <th></th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
-                    <tr>
-                        <!-- Row 2 -->
-                        <th>Morning</th>
-                        <td rowspan="2">Work</td>
-                        <td rowspan="3">Relax</td>
-                    </tr>
-                    <tr>
-                        <!-- Row 3 -->
-                        <th>Afternoon</th>
-                    </tr>
-                    <tr>
-                        <!-- Row 4 -->
-                        <th>Evening</th>
-                        <td>Dinner</td>
-                    </tr>
-                </table>
-            </li>
-            <li>
-                <h4>Table Head and Body</h4>
-                <p>Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage. Long tables can be sectioned off using the table body element: ( tbody ) and (thead).</p>
-                <p>When a table’s body is sectioned off, however, it also makes sense to section off the table’s column headings using the ( thead ) element</p>
-                <p>The ( tbody ) element should contain all of the table’s data, excluding the table headingss</p>
-                <img src="/Learning/Html/Introduction to html/images/table structure.PNG" alt="Table heading and Table body">
-                <p>The bottom part of a long table can also be sectioned off using the (tfoot) element.</p>
-
-            </li>
-        </ul>
-    </section>
-    <section id="semantic">
-        <h2>Semantic in HTML</h2>
-        <p>When building web pages, we use a combination of non-semantic HTML and Semantic HTML. The word semantic means “relating to meaning,” so semantic elements provide information about the content between the opening and closing tags.</p>
-        <p>By using Semantic HTML, we select HTML elements based on their meaning, not on how they are presented. Elements such as ( div ) and ( span) are not semantic elements since they provide no context as to what is inside of those tags.
-        </p>
-        <ul>
-            <li>
-                <h3>Header</h3>
-                <p>Let’s take a look at some semantic elements that assist in the structure of a web page. A ( header ) is a
-                    container usually for either navigational links or introductory content containing ( h1 ) to ( h6 )
-                    headings.</p>
-                <p>By using a (header) tag, our code becomes easier to read. It is much easier to identify what is inside of the
-                    ( h1 )‘s parent tags, as opposed to a ( div ) tag which would provide no details as to what was inside of
-                    the tag.</p>
-            </li>
-            <li>
-                <h3>Nav</h3>
-                <p>A ( nav ) is used to define a block of navigation links such as menus and tables of contents. It is important to note that ( nav ) can be used inside of the ( header ) element but can also be used on its own.</p>
-                <img src="/Learning/Html/Introduction to html/images/nav.PNG" alt="HTML Nav">
-            </li>
-            <li>
-                <h3>Main</h3>
-                <p>The element ( main ) is used to encapsulate the dominant content within a webpage. This tag is separate from the ( footer ) and the ( nav ) of a web page since these elements don’t contain the principal content. By using ( main ) as opposed to a ( div ) element, screen readers and web browsers are better able to identify that whatever is inside of the tag is the bulk of the content.</p>
-            </li>
-            <li>
-                <h3>Footer</h3>
-                <p>The content at the bottom of the subject information is known as the footer, indicated by the ( footer ) element. The footer contains information such as:</p>
+        </section>
+        <section id="semantic" class="container grid">
+            <div class="content">
+                <h2>Semantic in HTML</h2>
+                <p>When building web pages, we use a combination of non-semantic HTML and Semantic HTML. The word
+                    semantic means
+                    “relating to meaning,” so semantic elements provide information about the content between the
+                    opening and
+                    closing tags.</p>
+                <p>By using Semantic HTML, we select HTML elements based on their meaning, not on how they are
+                    presented.
+                    Elements such as ( div ) and ( span) are not semantic elements since they provide no context as to
+                    what is
+                    inside of those tags.
+                </p>
                 <ul>
-                    <li><p>Contact information</p></li>
-                    <li><p>Copyright information</p></li>
-                    <li><p>Terms of use</p></li>
-                    <li><p>Site Map</p></li>
-                    <li><p>Reference to top page links</p></li>
+                    <li>
+                        <h3>Header</h3>
+                        <p>Let’s take a look at some semantic elements that assist in the structure of a web page. A (
+                            header )
+                            is a
+                            container usually for either navigational links or introductory content containing ( h1 ) to
+                            ( h6 )
+                            headings.</p>
+                        <p>By using a (header) tag, our code becomes easier to read. It is much easier to identify what
+                            is
+                            inside of the
+                            ( h1 )‘s parent tags, as opposed to a ( div ) tag which would provide no details as to what
+                            was
+                            inside of
+                            the tag.</p>
+                    </li>
+                    <li>
+                        <h3>Nav</h3>
+                        <p>A ( nav ) is used to define a block of navigation links such as menus and tables of contents.
+                            It is
+                            important to note that ( nav ) can be used inside of the ( header ) element but can also be
+                            used on
+                            its own.</p>
+                        <img src="/Learning/Html/Introduction to html/images/nav.PNG" alt="HTML Nav">
+                    </li>
+                    <li>
+                        <h3>Main</h3>
+                        <p>The element ( main ) is used to encapsulate the dominant content within a webpage. This tag
+                            is
+                            separate from the ( footer ) and the ( nav ) of a web page since these elements don’t
+                            contain the
+                            principal content. By using ( main ) as opposed to a ( div ) element, screen readers and web
+                            browsers are better able to identify that whatever is inside of the tag is the bulk of the
+                            content.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Footer</h3>
+                        <p>The content at the bottom of the subject information is known as the footer, indicated by the
+                            (
+                            footer ) element. The footer contains information such as:</p>
+                        <ul>
+                            <li>
+                                <p>Contact information</p>
+                            </li>
+                            <li>
+                                <p>Copyright information</p>
+                            </li>
+                            <li>
+                                <p>Terms of use</p>
+                            </li>
+                            <li>
+                                <p>Site Map</p>
+                            </li>
+                            <li>
+                                <p>Reference to top page links</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Section</h3>
+                        <p> ( section ) defines elements in a document, such as chapters, headings, or any other area of
+                            the
+                            document with the same theme. For example, content with the same theme such as articles
+                            about
+                            cricket can go under a single ( section ). A website’s home page could be split into
+                            sections for
+                            the introduction, news items, and contact information.</p>
+                    </li>
+                    <li>
+                        <h3>Article</h3>
+                        <p>The ( article ) element holds content that makes sense on its own. ( article ) can hold
+                            content such
+                            as articles, blogs, comments, magazines, etc. An ( article ) tag would help someone using a
+                            screen
+                            reader understand where the article content (that might contain a combination of text,
+                            images,
+                            audio, etc.) begins and ends.</p>
+                    </li>
+                    <li>
+                        <h3>Aside</h3>
+                        <p>The ( aside ) element is used to mark additional information that can enhance another element
+                            but
+                            isn’t required in order to understand the main content. This element can be used alongside
+                            other
+                            elements such a ( article ) or ( section ). Some common uses of the ( aside ) element are
+                            for:</p>
+                        <ul>
+                            <li>Bibliographies</li>
+                            <li>Endnotes</li>
+                            <li>Comments</li>
+                            <li>Pull quotes</li>
+                            <li>Editorial sidebars and Aditional information</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Figure</h3>
+                        <p>The <code>&lt;figure&gt; </code> element used to encapsulate media such as an image,
+                            illustration,
+                            diagram, code snippet, etc, which is referenced in the main flow of the document.</p>
+                        <figure>
+                            <img src="/Learning/Html/Introduction to html/images/Figure.PNG"
+                                alt="Figure structure in HtML">
+                        </figure>
+                        <ul>
+                            <li>It’s possible to add a caption to the image by using ( figcaption ) </li>
+                            <p> ( figcaption ) is an element used to describe the media in the ( figure ) tag. Usually,
+                                (
+                                figcaption ) will go inside ( figure ). This is different than using a ( p ) element to
+                                describe
+                                the content; if we decide to change the location of ( figure ), the paragraph tag may
+                                get
+                                displaced from the figure while a ( figcaption ) will move with the figure. This is
+                                useful for
+                                grouping an image with a caption</p>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <h3>Section</h3>
-                <p> ( section ) defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. For example, content with the same theme such as articles about cricket can go under a single ( section ). A website’s home page could be split into sections for the introduction, news items, and contact information.</p>
-            </li>
-            <li>
-                <h3>Article</h3>
-                <p>The ( article ) element holds content that makes sense on its own. ( article ) can hold content such as articles, blogs, comments, magazines, etc. An ( article ) tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.</p>
-            </li>
-            <li>
-                <h3>Aside</h3>
-                <p>The ( aside ) element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such a ( article )  or ( section ). Some common uses of the ( aside ) element are for:</p>
-                <ul>
-                    <li>Bibliographies</li>
-                    <li>Endnotes</li>
-                    <li>Comments</li>
-                    <li>Pull quotes</li>
-                    <li>Editorial sidebars and Aditional information</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Figure</h3>
-                <p>The <code>&lt;figure&gt; </code> element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.</p>
-                <figure>
-                    <img src="/Learning/Html/Introduction to html/images/Figure.PNG" alt="Figure structure in HtML">
-                </figure>
-                <ul>
-                    <li>It’s possible to add a caption to the image by using ( figcaption ) </li>
-                    <p> ( figcaption ) is an element used to describe the media in the ( figure ) tag. Usually, ( figcaption ) will go inside ( figure ). This is different than using a ( p ) element to describe the content; if we decide to change the location of ( figure ), the paragraph tag may get displaced from the figure while a ( figcaption ) will move with the figure. This is useful for grouping an image with a caption</p>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
