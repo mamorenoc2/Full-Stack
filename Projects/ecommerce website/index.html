@@ -9,6 +9,8 @@
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -86,7 +88,17 @@
       </section>
 
       <!--=============== CATEGORIES ===============-->
-      <section class="categories"></section>
+      <section class="categories container section">
+        <h3 class="section__title"><span>Popular</span> categories</h3>
+        <div class="categories__container swiper">
+          <div class="swiper-wrapper">
+            <a href="shop.html" class="category__item swiper-slide">
+              <img src="./assets/img/category-1.jpg" alt="" class="category__img">
+              <h3 class="category__title">T-Shirt</h3>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!--=============== PRODUCTS ===============-->
       <section class="products"></section>
@@ -108,7 +120,8 @@
     <footer class="footer"></footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
     <!--=============== MAIN JS ===============-->
     <script src=""></script>
