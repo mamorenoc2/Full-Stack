@@ -15,10 +15,31 @@
 </head>
 
 <body>
+    <!------------------- HEADER ------------------------>
+    <header class="header">
+        <span class="header-logo">EDU.IO</span>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#description">description</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anatomy">anatomy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#body">body</a></li>
+                <li class="nav-item"><a class="nav-link" href="#structure">structure</a></li>
+                <li class="nav-item"><a class="nav-link" href="#text">text</a></li>
+                <li class="nav-item"><a class="nav-link" href="#list">list</a></li>
+                <li class="nav-item"><a class="nav-link" href="#images">images</a></li>
+                <li class="nav-item"><a class="nav-link" href="#video">video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#links">links</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tables">tables</a></li>
+                <li class="nav-item"><a class="nav-link" href="#semantic">semantic</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
+        <!------------------- DESCRIPTION ------------------------>
         <section id="description" class="container grid">
             <div class="content">
-                <h1 class="section__title title-center">HTML</h1>
+                <h1 class="title title-center">HTML</h1>
                 <div class="description__info">
                     <p>HTML is the skeleton of all web pages. It's often the first language learned by developers,
                         marketers, and designers and is core to front-end development work</p>
@@ -41,6 +62,7 @@
                         inject code snippets into newsletter, blog or website templates. </p>
                 </div>
         </section>
+        <!------------------- ANATOMY ------------------------>
         <section id="anatomy" class="container grid">
             <div class="content content_anatomy">
                 <div class="anatomy__info">
@@ -48,9 +70,12 @@
                     <p>HTML is composed of elements. These elements structure the webpage and define its content. Let's
                         take a look at how they're written.</p>
                 </div>
-                <img class="anatomy__img" src="/Learning/Html/Introduction to html/images/html lesson image.PNG" alt="Html">
+                <figure>
+                    <img class="anatomy__img" src="/Learning/Html/Introduction to html/images/html lesson image.PNG" alt="Html">
+                </figure>
             </div>
         </section>
+        <!------------------- BODY ------------------------>
         <section id="body" class="container grid">
             <div class="content content_body">
                 <div class="body__info">
@@ -61,6 +86,7 @@
                 <img src="./images/body.png" alt="body-anatomy-html" class="body__img">
             </div>
         </section>
+        <!------------------- STRUCTURE ------------------------>
         <section id="structure" class="container grid">
             <div class="content content_structure">
                 <h2 class="section__title title-center">HTML Structure</h2>
@@ -70,7 +96,7 @@
                     from their
                     parent element</p>
                     <br>
-                    <div class="content content_str-heading">
+                    <div class="content sub-content">
                         <h3 class="section__subtitle">Heading <code>&lt;h1&gt;&lt;/h1&gt;</code> </h3> 
                         <p>Headings in HTML are similar to headings in other types of media. For example, in newspapers,
                             large
@@ -85,7 +111,7 @@
                             content.
                         </p>
                     </div>
-                    <div class="content content_str-div">
+                    <div class="content sub-content">
                         <h3 class="section__subtitle">Divs <code>&lt;div&gt;&lt;/div&gt;</code></h3>
                         <p>One of the most popular elements in HTML because is a short for “division” or a container
                             that
@@ -103,7 +129,7 @@
                             readability.
                         </p>
                     </div>
-                    <div class="content content_str-attr">
+                    <div class="content sub-content">
                         <h3 class="section__subtitle">Attributes <code>&lt;tag_name <strong>name="value"</strong>&gt;&lt;/tag_name&gt;</code></h3>
                         <p> Attributes are content added to the opening tag of an element and can be used in several
                             different
@@ -117,7 +143,7 @@
                             purposes in HTML, but for now, we’ll focus on how they can help us identify content on our
                             page.</p>
                     </div>
-                    <div class="content content_str-lb">
+                    <div class="content sub-content">
                         <h3 class="section__subtitle">Line Breaks <code>&lt;br&gt;&lt;/br&gt;</code></h3>
                         <p>The spacing between code in an HTML file doesn’t affect the positioning of elements in the
                             browser.
@@ -130,6 +156,7 @@
                     </div>
             </div>
         </section>
+        <!------------------- TEXT ------------------------>
         <section id="text" class="container grid">
             <div class="content content__text">
                 <h2 class="section__title title-center">Displaying text in HTML</h2>
@@ -149,6 +176,7 @@
                 </p>
             </div>
         </section>
+        <!------------------- LIST ------------------------>
         <section id="list" class="container grid">
             <div class="content no-cuenta">
                 <h2 class="section__title title-center">List in HTML</h2>
@@ -189,7 +217,7 @@
                 </ol>
             </div>
         </section>
-
+        <!------------------- IMAGES ------------------------>
         <section id="images" class="container grid">
             <div class="content">
                 <h2 class="section__title title-center">Images in HTML <code>&lt;img /&gt;</code> </h2>
@@ -213,7 +241,7 @@
                     </div>
                     <img src="/Learning/Html/Introduction to html/images/HTML image.jpg">
                 </div>
-                <div class="content img__content-alts">
+                <div class="content sub-content">
                     <h3 class="section__subtitle">Image Alts <code>&lt;img <strong>alt = "value"</strong> /&gt;</code></h3>
                 <p>Part of being an exceptional web developer is making your site accessible to users of all
                     backgrounds. In
@@ -249,9 +277,10 @@
                 </div>
             </div>
         </section>
+        <!------------------- VIDEOS ------------------------>
         <section id="video" class="container grid">
             <div class="content">
-                <h2>Video in HTML</h2>
+                <h2 class="section__title">Video in HTML</h2>
                 <p>In addition to images, HTML also supports displaying videos. Like the <code>&lt;img&gt;</code>
                     element, the
                     <code>&lt;video&gt;</code> element requires a src attribute with a link to the video source. Unlike
@@ -272,21 +301,24 @@
                 <p>The text between the opening and closing video tags will only be displayed if the browser is unable
                     to load
                     the video.</p>
-                <h4>4 Increíbles extensiones de visual Studio code para HTML</h4>
-                <video
-                    src="/Learning/Html/Introduction to html/4 Increíbles Extensiones de Visual Studio Code para HTML _480p.mp4"
-                    width="320" height="240" controls> Video not supported</video>
+                <h4 class="section__subtitle2">4 Increíbles extensiones de visual Studio code para HTML</h4>
+                <figure>
+                    <video src="/Learning/Html/Introduction to html/4 Increíbles Extensiones de Visual Studio Code para HTML _480p.mp4" width="320" height="240" controls> Video not supported</video>
+                </figure>
             </div>
         </section>
+        <!------------------- LINKS ------------------------>
         <section id="links" class="container grid">
             <div class="content">
-                <h2>Links in HTML</h2>
+                <h2 class="section__subtitle">Links in HTML</h2>
                 <p>One of the powerful aspects of HTML (and the Internet), is the ability to link to other web pages.
                     You can
-                    add links to a web page by adding an anchor element ( a ) and including the text of the link in
+                    add links to a web page by adding an anchor element <code>&lt;a&gt;</code> and including the text of the link in
                     between the
                     opening and closing tags.</p>
-                <img src="/Learning/Html/Introduction to html/images/Link.PNG" alt="anchor link">
+                    <figure>
+                        <img src="/Learning/Html/Introduction to html/images/Link.PNG" alt="anchor link">
+                    </figure>
                 <p>Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link
                     above
                     supposed to work if there is no URL that will lead users to the actual Wikipedia page?. The anchor
@@ -296,22 +328,24 @@
                     and is used to link to a path, or the address to where a file is located (whether it is on your
                     computer or
                     another location). The paths provided to the href attribute are often URLs.</p>
-                <img src="/Learning/Html/Introduction to html/images/Link href.PNG" alt="link href">
+                    <figure>
+                        <img src="/Learning/Html/Introduction to html/images/Link href.PNG" alt="link href">
+                    </figure>
                 <p>In the example above, the href attribute has been set to the value of the URL
                     https://www.wikipedia.org/. The
                     example now shows the correct use of an anchor element.</p>
 
-                <h3>Open Links</h3>
+                <h3 class="section__subtitle2">Open Links</h3>
                 <p>Have you ever clicked on a link and observed the resulting web page open in a new browser window? If
                     so, you
-                    can thank the ( a ) element’s target attribute. The target attribute specifies how a link should
+                    can thank the <code>&lt;a&gt;</code> element’s target attribute. The target attribute specifies how a link should
                     open.</p>
                 <p>For a link to open in a new window, the target attribute requires a value of _blank. The target
                     attribute can
                     be added directly to the opening tag of the anchor element, just like the href attribute</p>
-                <img src="/Learning/Html/Introduction to html/images/Link _blank.PNG"
-                    alt="link anchor with blank target">
-
+                    <figure>
+                        <img src="/Learning/Html/Introduction to html/images/Link _blank.PNG" alt="link anchor with blank target">
+                    </figure>
                 <p>Thus far you have learned how to link to external web pages. Many sites also link to internal web
                     pages like
                     Home, About, and Contact. HTML files are often stored in the same folder, as shown in the example
@@ -320,142 +354,165 @@
                     in the
                     same folder. Because the files are stored in the same folder, we can link web pages together using a
                     relative path.</p>
-                <img src="/Learning/Html/Introduction to html/images/Link internal page.PNG"
-                    alt="link anchor for internal pages">
+                    <figure>
+                        <img src="/Learning/Html/Introduction to html/images/Link internal page.PNG" alt="link anchor for internal pages">
+                    </figure>
 
                 <p>You’ve probably visited websites where not all links were made up of text. Maybe the links you
                     clicked on
                     were images or some other form of content. HTML allows you to turn nearly any element into a link by
                     wrapping that element with an anchor element. With this technique, it’s possible to turn images into
                     links
-                    by simply wrapping the <img> element with an ( a ) element.</p>
-                <img src="/Learning/Html/Introduction to html/images/HTML image.jpg" alt="">
+                    by simply wrapping the <code>&lt;img&gt;</code> element with an <code>&lt;a&gt;</code> element.</p>
+                    <figure>
+                        <img src="/Learning/Html/Introduction to html/images/HTML image.jpg" alt="">
+                    </figure>
             </div>
         </section>
-
+        <!------------------- TABLES ------------------------>
         <section id="tables" class="container grid">
             <div class="content">
-                <h2>Tables in HTML</h2>
-                <h3>Create a table</h3>
+                <h2 class="section__title">Tables in HTML</h2>
                 <p>There are many websites on the Internet that display information like stock prices, sports scores,
-                    invoice
-                    data, and more. This data is tabular in nature, meaning that a table is often the best way of
+                    invoice data, and more. This data is tabular in nature, meaning that a table is often the best way of
                     presenting the
                     data.</p>
-                <ul>
-                    <li>
-                        <p>Before displaying data, we must first create the table that will contain the data by using
-                            the (
-                            table ) element.</p>
-                    </li>
-                    <li>
-                        <h4>Table rows:</h4>
-                        <p> The first step in entering data into the table is to add rows using the table row element: (
-                            tr ).
-                        </p>
-                        <img src="/Learning/Html/Introduction to html/images/table.PNG" alt="Table rows">
-                    </li>
-                    <li>
-                        <h4>Table data:</h4>
+                <div class="content sub-content">
+                    <h3 class="section__subtitle">Creating a Table</h3>
+                    <p>Before displaying data, we must first create the table that will contain the data by using
+                        the <code>&lt;table&gt;</code>  element.</p>
+                        <h4 class="section__subtitle2">Table rows:</h4>
+                        <p>The first step in entering data into the table is to add rows using the table row element: (
+                            tr ).</p>
+                        <figure>
+                            <img src="./images/table.PNG" alt="Table rows">
+                        </figure>
+                        <br>
+                        <hr>
+                        <h4 class="section__subtitle2">Table data:</h4>
                         <p>Rows aren’t sufficient to add data to a table. Each cell element must also be defined. In
                             HTML, you
                             can add data using the table data element: ( td )</p>
-                        <img src="/Learning/Html/Introduction to html/images/table data.PNG" alt="Table data">
-                    </li>
-                    <li>
-                        <h4>Table headings:</h4>
+                            <figure>
+                                <img src="./images/table data.PNG" alt="Table data">
+                            </figure>
+                        <br>
+                        <hr>
+                        <h4 class="section__subtitle2">Table headings:</h4>
                         <p>Table data doesn’t make much sense without titles to describe what the data represents, to
                             add titles
-                            to rows and columns, you can use the table heading element: ( th )</p>
-                        <img src="/Learning/Html/Introduction to html/images/table heading.PNG" alt="Table heading">
+                            to rows and columns, you can use the table heading element: <code>&lt;th&gt;</code></p>
+                            <figure>
+                                <img src="./images/table heading.PNG" alt="Table heading">
+                            </figure> 
                         <p>For example, in this table a new row was added to hold the three headings: a blank heading, a
                             Saturday heading, and a Sunday heading. The blank heading creates the extra table cell
                             necessary to
                             align the table headings correctly over the data they correspond to.</p>
                         <p>In the second row, one table heading was added as a row title: Temperature</p>
-                        <p>Note, also, the use of the scope attribute, which can take one of two values</p>
+                        <h3 class="section__subtitle2">Scope</h3>
+                        <p>Note, also, the use of the <code>scope</code> attribute, which can take one of two values</p>
                         <ol>
-                            <li>row: This value makes it clear that the heading is for a row</li>
-                            <li>col: This value makes it clear that the heading is for a column</li>
+                            <li> <i class="fa fa-code"></i><code>row:</code> This value makes it clear that the heading is for a row</li>
+                            <li> <i class="fa fa-code"></i><code>col:</code> This value makes it clear that the heading is for a column</li>
                         </ol>
                         <br>
-                        <img src="/Learning/Html/Introduction to html/images/table heading2.PNG" alt="Table ">
-                    </li>
-                    <li>
-                        <h4>Spanning Columns</h4>
-                        <p>What if the table contains data that spans multiple columns? For example, a personal calendar
-                            could
-                            have events that span across multiple hours, or even multiple days.</p>
-                        <p>Data can span columns using the colspan attribute. The attribute accepts an integer (greater
-                            than or
-                            equal to 1) to denote the number of columns it spans across.</p>
-                        <table border="1">
+                        <table>
                             <tr>
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wednesday</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Out of Town</td>
-                                <td>Back in Town</td>
-                            </tr>
-                        </table>
-                    </li>
-                    <li>
-                        <h4>Spanning rows</h4>
-                        <p>Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used
-                            for data
-                            that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It
-                            accepts
-                            an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
-                        <table border="1">
-                            <tr>
-                                <!-- Row 1 -->
                                 <th></th>
-                                <th>Saturday</th>
-                                <th>Sunday</th>
+                                <th scope="col">Saturday</th>
+                                <th scope="col">Sunday</th>
                             </tr>
                             <tr>
-                                <!-- Row 2 -->
-                                <th>Morning</th>
-                                <td rowspan="2">Work</td>
-                                <td rowspan="3">Relax</td>
-                            </tr>
-                            <tr>
-                                <!-- Row 3 -->
-                                <th>Afternoon</th>
-                            </tr>
-                            <tr>
-                                <!-- Row 4 -->
-                                <th>Evening</th>
-                                <td>Dinner</td>
+                                <th scope="row">Temperature</th>
+                                <td>73</td>
+                                <td>81</td>
                             </tr>
                         </table>
-                    </li>
-                    <li>
-                        <h4>Table Head and Body</h4>
-                        <p>Over time, a table can grow to contain a lot of data and become very long. When this happens,
-                            the
-                            table can be sectioned off so that it is easier to manage. Long tables can be sectioned off
-                            using
-                            the table body element: ( tbody ) and (thead).</p>
-                        <p>When a table’s body is sectioned off, however, it also makes sense to section off the table’s
-                            column
-                            headings using the ( thead ) element</p>
-                        <p>The ( tbody ) element should contain all of the table’s data, excluding the table headingss
-                        </p>
-                        <img src="/Learning/Html/Introduction to html/images/table structure.PNG"
-                            alt="Table heading and Table body">
-                        <p>The bottom part of a long table can also be sectioned off using the (tfoot) element.</p>
-
-                    </li>
-                </ul>
+                            <ul>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <h4 class="section__subtitle2">Spanning Columns</h4>
+                            <p>What if the table contains data that spans multiple columns? For example, a personal calendar
+                                could
+                                have events that span across multiple hours, or even multiple days.</p>
+                            <p>Data can span columns using the colspan attribute. The attribute accepts an integer (greater
+                                than or
+                                equal to 1) to denote the number of columns it spans across.</p>
+                            <table border="1">
+                                <tr>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Out of Town</td>
+                                    <td>Back in Town</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <h4 class="section__subtitle2">Spanning rows</h4>
+                            <p>Data can also span multiple rows using the rowspan attribute. The rowspan attribute is used
+                                for data
+                                that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It
+                                accepts
+                                an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
+                            <table border="1">
+                                <tr>
+                                    <!-- Row 1 -->
+                                    <th></th>
+                                    <th>Saturday</th>
+                                    <th>Sunday</th>
+                                </tr>
+                                <tr>
+                                    <!-- Row 2 -->
+                                    <th>Morning</th>
+                                    <td rowspan="2">Work</td>
+                                    <td rowspan="3">Relax</td>
+                                </tr>
+                                <tr>
+                                    <!-- Row 3 -->
+                                    <th>Afternoon</th>
+                                </tr>
+                                <tr>
+                                    <!-- Row 4 -->
+                                    <th>Evening</th>
+                                    <td>Dinner</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <h4 class="section__subtitle2">Table Head and Body</h4>
+                            <p>Over time, a table can grow to contain a lot of data and become very long. When this happens,
+                                the
+                                table can be sectioned off so that it is easier to manage. Long tables can be sectioned off
+                                using
+                                the table body element: ( tbody ) and (thead).</p>
+                            <p>When a table’s body is sectioned off, however, it also makes sense to section off the table’s
+                                column
+                                headings using the ( thead ) element</p>
+                            <p>The ( tbody ) element should contain all of the table’s data, excluding the table headingss
+                            </p>
+                            <figure>
+                                <img src="/Learning/Html/Introduction to html/images/table structure.PNG" alt="Table heading and Table body">
+                            </figure>
+                            <p>The bottom part of a long table can also be sectioned off using the (tfoot) element.</p>
+    
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
 
         </section>
+        <!------------------- SEMANTIC ------------------------>
         <section id="semantic" class="container grid">
             <div class="content">
-                <h2>Semantic in HTML</h2>
+                <h2 class="section__title">Semantic in HTML</h2>
                 <p>When building web pages, we use a combination of non-semantic HTML and Semantic HTML. The word
                     semantic means
                     “relating to meaning,” so semantic elements provide information about the content between the
